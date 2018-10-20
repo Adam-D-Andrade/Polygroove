@@ -14,16 +14,16 @@ if !moving{
 }
 
 if (moving){
-	if (move_dir[key.left]){
+	if (move_dir[LC_key.left]){
 		target_x = x - 100;
 	}
-	if (move_dir[key.right]){
+	if (move_dir[LC_key.right]){
 		target_x = x + 100;
 	}
-	if (move_dir[key.up]){
+	if (move_dir[LC_key.up]){
 		target_y = y - 100;
 	}
-	if (move_dir[key.down]){
+	if (move_dir[LC_key.down]){
 		target_y = y + 100;
 	}
 }
