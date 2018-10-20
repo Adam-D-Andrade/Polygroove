@@ -79,6 +79,14 @@
             }
         },
         {
+            "Key": "366b3dbf-dc83-4140-a73a-cbac19763862",
+            "Value": {
+                "id": "2e1d8b4c-5fd2-49bb-a5cc-e7cb62c521a2",
+                "resourcePath": "objects\\oInputSignal\\oInputSignal.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "3dbc1bc1-ae71-4348-8795-0377627ab5cd",
             "Value": {
                 "id": "9c517e77-2179-44d0-82ff-ae23e8a1191a",
@@ -260,6 +268,14 @@
                 "id": "2dc03fb7-47d1-4bfa-9c4b-2fc9abd32ef3",
                 "resourcePath": "objects\\oPlayerController\\oPlayerController.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "c8c85087-efe9-4e1b-b760-f819e2d8ea5b",
+            "Value": {
+                "id": "ebe8b2cb-2f08-45c8-a5c4-136bf31a866d",
+                "resourcePath": "sprites\\sprite2\\sprite2.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
