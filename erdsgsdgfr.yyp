@@ -271,6 +271,14 @@
             }
         },
         {
+            "Key": "85f67b4f-f3da-4c6e-b4f6-c3714eb41c3b",
+            "Value": {
+                "id": "0532c0d7-b81d-4166-b5d3-74a99d26f64f",
+                "resourcePath": "objects\\oParticleController\\oParticleController.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "8940f3e2-7f8d-45ee-b176-d846da57835c",
             "Value": {
                 "id": "ad09ec20-4a65-4281-9ed6-d12632c3c212",
