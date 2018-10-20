@@ -239,6 +239,14 @@
             }
         },
         {
+            "Key": "b72696a4-2cd6-4e6b-aa85-46c06bf53d59",
+            "Value": {
+                "id": "2f53bd4c-239b-4c55-951e-41b701675981",
+                "resourcePath": "sounds\\mTrack1\\mTrack1.yy",
+                "resourceType": "GMSound"
+            }
+        },
+        {
             "Key": "bfb3629d-c5ff-49fe-96e5-779bda5b7f08",
             "Value": {
                 "id": "fabfd7b5-1a6d-45b5-b8cb-defd56d416e2",
