@@ -5,10 +5,12 @@
 global.seconds_passed = delta_time/1000000;
 
 if (time_tracking){
-	time = (current_time - start_time);
+	time += (delta_time*0.000001);
 }
-
-if (time mod (global.beatsPerSecond * 1000) == 0){
+var val = time mod (global.beatsPerSecond)
+if (val >= -0.2) and (val <= 0.2){
+	
+	beats++;
 	with(oCenterPoint) {
 		image_xscale = 2;
 		image_yscale = 2;

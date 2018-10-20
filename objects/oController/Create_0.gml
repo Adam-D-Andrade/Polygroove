@@ -1,6 +1,6 @@
 /// @description
 
 
-global.beatsPerSecond = 130/60;
+global.beatsPerSecond = 60/130;
 
 
