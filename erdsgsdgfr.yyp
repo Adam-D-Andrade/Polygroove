@@ -63,6 +63,14 @@
             }
         },
         {
+            "Key": "14e7a392-8d60-4478-a0d1-c603fdcad772",
+            "Value": {
+                "id": "fa25df94-0356-4dd3-93ea-24413300f9c2",
+                "resourcePath": "sounds\\mTrack1_130bpm\\mTrack1_130bpm.yy",
+                "resourceType": "GMSound"
+            }
+        },
+        {
             "Key": "16dd69e7-1cb5-4096-a9ef-534ba67c9aea",
             "Value": {
                 "id": "0e97e1e8-6be3-4618-be7a-2a16286bb0a1",
@@ -183,11 +191,27 @@
             }
         },
         {
+            "Key": "6344241a-90b9-4a22-959b-965aa0e73fef",
+            "Value": {
+                "id": "34e76182-d81e-414f-992d-0c67cf7d8ec5",
+                "resourcePath": "sounds\\mTrack2_130bpm\\mTrack2_130bpm.yy",
+                "resourceType": "GMSound"
+            }
+        },
+        {
             "Key": "65964ecf-5bac-44af-b298-53b66c42ff34",
             "Value": {
                 "id": "b729ecaa-8d5b-4b08-930c-5642737cc1eb",
                 "resourcePath": "views\\65964ecf-5bac-44af-b298-53b66c42ff34.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "660c907b-f831-48ee-8d63-ed64e75af6ad",
+            "Value": {
+                "id": "7cc41171-98d4-483d-9a9d-d48e58c90564",
+                "resourcePath": "sounds\\mTrack_Level99\\mTrack_Level99.yy",
+                "resourceType": "GMSound"
             }
         },
         {
@@ -332,6 +356,14 @@
                 "id": "2dc03fb7-47d1-4bfa-9c4b-2fc9abd32ef3",
                 "resourcePath": "objects\\oPlayerController\\oPlayerController.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "c6db737a-252c-4266-9049-f062aa3dc1ed",
+            "Value": {
+                "id": "472194dd-fe36-4785-af49-a5bc52b4db97",
+                "resourcePath": "sounds\\mTrack3_135bpm\\mTrack3_135bpm.yy",
+                "resourceType": "GMSound"
             }
         },
         {
