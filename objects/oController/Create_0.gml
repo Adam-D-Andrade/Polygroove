@@ -42,7 +42,7 @@ audio_table[# audiotable.track, level.four] = audio_get_name(mTrack3_135bpm);
 audio_table[# audiotable.bpm, level.four] = 135;
 audio_table[# audiotable.bars, level.four] = 62;
 audio_table[# audiotable.barStart, level.four] = 12;
-audio_table[# audiotable.barEnd, level.four] = 60
+audio_table[# audiotable.barEnd, level.four] = 60;
 
 next_level = false;
 
