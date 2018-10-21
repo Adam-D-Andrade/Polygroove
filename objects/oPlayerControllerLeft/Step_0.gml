@@ -172,3 +172,9 @@ if (shooting){
 x = lerp(x, target_x, 0.5);
 y = lerp(y, target_y, 0.5);
 
+if (flag == false){
+	flag = true;
+	alarm[0] = 20;
+}
+
+
