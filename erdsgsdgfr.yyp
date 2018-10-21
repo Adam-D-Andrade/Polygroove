@@ -103,6 +103,14 @@
             }
         },
         {
+            "Key": "39b061bd-ab58-4042-9444-659e485c39f5",
+            "Value": {
+                "id": "a9eba4a2-e154-4cea-8ecb-d585f757a041",
+                "resourcePath": "objects\\oText\\oText.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "3dbc1bc1-ae71-4348-8795-0377627ab5cd",
             "Value": {
                 "id": "9c517e77-2179-44d0-82ff-ae23e8a1191a",

@@ -6,28 +6,117 @@ move_dir[2] = keyboard_check_pressed(ord("W"));
 move_dir[3] = keyboard_check_pressed(ord("S"));
 
 
-if !moving{
-	for (var i = 0; i < array_length_1d(move_dir) -1; i++ ){
-		if (move_dir[i]){
-			moving = true;
+
+
+
+if (move_dir[LC_key.left]){
+	if (global.accuracy[r.perfect]) {
+		target_x = ( x - x_limit < 0) ? x : x - x_movement;
+		with (instance_create_layer(oCenterPoint.x, oCenterPoint.y, "Instances", oText)){
+			text = "Perfect!";
+		}
+	}
+	else if global.accuracy[r.great] {
+		target_x = ( x - x_limit < 0) ? x : x - x_movement;
+		with (instance_create_layer(oCenterPoint.x, oCenterPoint.y, "Instances", oText)){
+			text = "Great!";
+		}
+	}
+	else if global.accuracy[r.good]{
+		target_x = ( x - x_limit < 0) ? x : x - x_movement;
+		with (instance_create_layer(oCenterPoint.x, oCenterPoint.y, "Instances", oText)){
+			text = "Good!";
+		}
+	}
+	else {
+		with (instance_create_layer(oCenterPoint.x, oCenterPoint.y, "Instances", oText)){
+			text = "Bad!";
+		}			
+		target_x = x;
+	}
+}
+	
+if (move_dir[LC_key.right]){
+	if (global.accuracy[r.perfect]) {
+		target_x =( x + x_limit > room_width/2) ? x : x + x_movement;
+		with (instance_create_layer(oCenterPoint.x, oCenterPoint.y, "Instances", oText)){
+			text = "Perfect!";
+		}
+	}
+	else if global.accuracy[r.great] {
+		target_x =( x + x_limit > room_width/2) ? x : x + x_movement;
+		with (instance_create_layer(oCenterPoint.x, oCenterPoint.y, "Instances", oText)){
+			text = "Great!";
+		}
+	}
+	else if global.accuracy[r.good]{
+		target_x =( x + x_limit > room_width/2) ? x : x + x_movement;
+		with (instance_create_layer(oCenterPoint.x, oCenterPoint.y, "Instances", oText)){
+			text = "Good!";
+		}
+	}
+	else {
+		with (instance_create_layer(oCenterPoint.x, oCenterPoint.y, "Instances", oText)){
+			text = "Bad!";
+		}			
+		target_x = x;
+	}
+}
+	
+if (move_dir[LC_key.up]){
+	if (global.accuracy[r.perfect]) {
+		target_y = (y - y_limit < 0) ? y : y - y_movement;
+		with (instance_create_layer(oCenterPoint.x, oCenterPoint.y, "Instances", oText)){
+			text = "Perfect!";
+		}
+	}
+	else if global.accuracy[r.great] {
+		target_y = (y - y_limit < 0) ? y : y - y_movement;
+		with (instance_create_layer(oCenterPoint.x, oCenterPoint.y, "Instances", oText)){
+			text = "Great!";
+		}
+	}
+	else if global.accuracy[r.good]{
+		target_y = (y - y_limit < 0) ? y : y - y_movement;
+		with (instance_create_layer(oCenterPoint.x, oCenterPoint.y, "Instances", oText)){
+			text = "Good!";
+		}
+	}
+	else {
+		with (instance_create_layer(oCenterPoint.x, oCenterPoint.y, "Instances", oText)){
+			text = "Bad!";
+		}
+		target_y = y;
+	}
+}
+	
+if (move_dir[LC_key.down]){
+	if (global.accuracy[r.perfect]) {
+		target_y = (y + y_limit > room_height) ? y :  y + y_movement;
+		with (instance_create_layer(oCenterPoint.x, oCenterPoint.y, "Instances", oText)){
+			text = "Perfect!";
+		}
+	}
+	else if global.accuracy[r.great] {
+		target_y = (y + y_limit > room_height) ? y :  y + y_movement;
+		with (instance_create_layer(oCenterPoint.x, oCenterPoint.y, "Instances", oText)){
+			text = "Great!";
+		}
+	}
+	else if global.accuracy[r.good]{
+		target_y = (y + y_limit > room_height) ? y :  y + y_movement;
+		with (instance_create_layer(oCenterPoint.x, oCenterPoint.y, "Instances", oText)){
+			text = "Good!";
+		}
+	}
+	else {
+		target_y = y;
+		with (instance_create_layer(oCenterPoint.x, oCenterPoint.y, "Instances", oText)){
+			text = "Bad!";
 		}
 	}
 }
 
-if (moving){
-	if (move_dir[LC_key.left]){
-		target_x = ( x - x_limit < 0) ? x : x - x_movement;
-	}
-	if (move_dir[LC_key.right]){
-		target_x =( x + center_proximity_limit > room_width/2) ? x : x + x_movement;
-	}
-	if (move_dir[LC_key.up]){
-		target_y = (y - y_limit < 0) ? y : y - y_movement;
-	}
-	if (move_dir[LC_key.down]){
-		target_y = (y + y_limit > room_height) ? y :  y + y_movement;
-	}
-}
 
 
 x = lerp(x, target_x, 0.5);
