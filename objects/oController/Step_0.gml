@@ -13,4 +13,8 @@ if keyboard_check_pressed(vk_space){
 	}
 }
 
+if (next_level){
+	next_level = !next_level;
+	alarm[0] = 30;
+}
 

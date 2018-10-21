@@ -59,9 +59,17 @@ if (global.target_value >= -0.05) and (global.target_value <= 0.05){
 }
 #endregion
 
+if (total_beats >= end_beat){
+	instance_destroy(oParEnemy);
+}
 
 if (total_beats >= max_beats_on_track) {
+	total_beats = 0;
+	global.level_counter++;
+	
+	oController.next_level = true;
 	instance_destroy();
+	
 }
 
 
