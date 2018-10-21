@@ -7,6 +7,7 @@ var left_offset = 100;//player start x
 var right_offset = 100;
 
 
+
 //Position is Relative to center, 0 is clsoest x positiong the player can be to the center line
 xLeft[0] = half_w - left_offset;
 xLeft[1] = half_w - left_offset - 64*1;
@@ -21,3 +22,9 @@ xRight[2] = half_w + right_offset + 64*2;
 xRight[3] = half_w + right_offset + 64*3;
 xRight[4] = half_w + right_offset + 64*4;
 xRight[5] = half_w + right_offset + 64*5;
+
+
+
+if instance_exists(oCenterPoint){
+	distance_to_input_buffer = oCenterPoint.y - y;
+}

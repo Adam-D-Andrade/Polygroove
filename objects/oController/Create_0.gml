@@ -43,6 +43,9 @@ var grid_height = rm_height div GRID_SIZE;
 var centre_x = rm_width/2;
 var centre_y = rm_height/2;
 
+
+global.PlayerLives = 5;
+
 if !instance_exists(oPlayerControllerLeft) {
 	instance_create_layer(centre_x-100, centre_y, "Instances", oPlayerControllerLeft)
 }

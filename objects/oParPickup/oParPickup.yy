@@ -1,8 +1,8 @@
 {
-    "id": "a823fc88-8395-4bb1-a242-15651c7b50ed",
+    "id": "0cc32bd6-53f2-4371-839d-cb0e7bc6b629",
     "modelName": "GMObject",
     "mvc": "1.0",
-    "name": "oRightEnemy",
+    "name": "oParPickup",
     "eventList": [
         
     ],
@@ -24,6 +24,6 @@
     "physicsStartAwake": true,
     "properties": null,
     "solid": false,
-    "spriteId": "041ab27d-fd47-40fe-a20d-145be49c826d",
+    "spriteId": "00000000-0000-0000-0000-000000000000",
     "visible": true
 }
