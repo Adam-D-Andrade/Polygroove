@@ -9,7 +9,7 @@ global.colorGreen = make_color_rgb(112,206,61);
 global.colorYellow = make_color_rgb(252,229,30);
 
 
-global.beatsPerSecond = 60/130;
+global.beatsPerSecond = 60/60;
 
 //enum to get values from array on how close we were!
 enum r {

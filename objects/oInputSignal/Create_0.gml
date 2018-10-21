@@ -6,4 +6,4 @@ if instance_exists(oCenterPoint){
 	distance_to_input_buffer = oCenterPoint.y - y;
 }
 
-
+dist = 0;

@@ -6,19 +6,24 @@ if (time_tracking){
 	beats += (delta_time*0.001) mod (60/130);
 }
 
-global.target_value = time mod (global.beatsPerSecond)
+global.target_value = time mod (global.beatsPerSecond);
 
-global.accuracy[r.bad] = (global.target_value < -0.3) && (global.target_value > 0.3)
-global.accuracy[r.good] = (global.target_value >= -0.3) && (global.target_value <= 0.3)
-global.accuracy[r.great] = (global.target_value >= -0.15) && (global.target_value <= 0.15)
-global.accuracy[r.perfect] = (global.target_value >= -0.05) && (global.target_value <= 0.05)
+test = (current_time mod bpm)/bpm; //value from 0 461 --> divided by 461, value now 0 - 1
 
 if (global.target_value >= -0.05) and (global.target_value <= 0.05){
-	instance_create_layer(x, y, "Instances", oInputSignal);
-	with(oCenterPoint) {
-		image_xscale = 2;
-		image_yscale = 2;
+	if (bpmTrigger){
+		instance_create_layer(x, y, "Instances", oInputSignal);
+		with(oCenterPoint) {
+			image_xscale = 2;
+			image_yscale = 2;
+		}
+		
+		//prevent from making instances too fast
+		bpmTrigger = !bpmTrigger;
+		alarm[0] = 5;
 	}
+
+	
 }
 
 
