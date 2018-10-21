@@ -26,11 +26,15 @@ if (global.target_value >= -0.05) and (global.target_value <= 0.05){
 		
 		with instance_create_layer(x,-32, "Instances", oParEnemy) {
 			x = choose(xLeft[irandom_range(0,5)], xRight[irandom_range(0,5)]);
-			rotation = 359;
-			scale = 0.8;
+			rotation = 180;
+			scale = 2;
 		}
 		
 		with(oPlayerControllerLeft){
+			rotation = 359;
+			scale = 0.8;
+		}
+		with(oPlayerControllerRight){
 			rotation = 359;
 			scale = 0.8;
 		}
