@@ -6,6 +6,9 @@ var sprite_offset = sprite_get_xoffset(sprPlayer);
 var left_offset = 100;//player start x
 var right_offset = 100;
 
+target_y = 0;
+move = false;
+
 scale = 1;
 rotation = 0;
 

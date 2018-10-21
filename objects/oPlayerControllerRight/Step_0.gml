@@ -161,4 +161,11 @@ if (flag == false){
 	alarm[0] = 20;
 }
 
-rot += 3;
+//Current Life Variables for Drawing
+if (scale != 0.4) {
+	scale = Approach(scale, 0.4, 0.01);
+}
+
+if (rot != 0) {
+	rot = lerp(rot, 0, 0.05);
+}

@@ -271,14 +271,6 @@
             }
         },
         {
-            "Key": "633c9596-6e21-4c35-9a94-03b596d8a47d",
-            "Value": {
-                "id": "298c4f28-0872-422a-a1ed-e6380222dc73",
-                "resourcePath": "sounds\\mTrack1_6min\\mTrack1_6min.yy",
-                "resourceType": "GMSound"
-            }
-        },
-        {
             "Key": "6344241a-90b9-4a22-959b-965aa0e73fef",
             "Value": {
                 "id": "34e76182-d81e-414f-992d-0c67cf7d8ec5",
