@@ -68,6 +68,7 @@ if (total_beats >= max_beats_on_track) {
 	global.level_counter++;
 	
 	oController.next_level = true;
+	audio_group_unload(audio_group_music);
 	instance_destroy();
 	
 }
