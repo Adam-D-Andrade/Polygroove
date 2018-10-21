@@ -2,6 +2,7 @@
 global.custom_debug_mode = false;
 
 // Colours
+global.colorBackgroundPurple = make_color_rgb(20,0,25);
 global.colorPurple = make_color_rgb(52,0,66);
 global.colorBlue = make_color_rgb(44,65,121);
 global.colorTeal = make_color_rgb(32,112,123);
