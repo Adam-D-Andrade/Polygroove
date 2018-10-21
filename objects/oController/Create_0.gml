@@ -1,9 +1,6 @@
 /// @description
 global.custom_debug_mode = false;
 
-global.beatsPerMinute = 115;
-global.beatsPerSecond = 60/global.beatsPerMinute;
-
 
 enum audiotable{
 	track,
@@ -20,9 +17,9 @@ enum level {
 	four
 }
 
-audio_table = ds_grid_create(6, 4);
+audio_table = ds_grid_create(5, 4);
 
-audio_table[# audiotable.track, level.one] = audio_get_name(mTrack5_115bpm);
+audio_table[# audiotable.track, level.one] = audio_get_name(mTrack1_130bpm);
 audio_table[# audiotable.bpm, level.one] = 115;
 audio_table[# audiotable.bars, level.one] = 57;
 audio_table[# audiotable.barStart, level.one] = 5;
