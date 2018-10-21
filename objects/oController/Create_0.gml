@@ -1,5 +1,5 @@
 /// @description
-global.debug_mode = true;
+global.custom_debug_mode = true;
 
 // Colours
 global.colorPurple = make_color_rgb(52,0,66);
