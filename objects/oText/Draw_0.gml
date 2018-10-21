@@ -1,3 +1,3 @@
 /// @description
 
-draw_text(x, y, text);
+draw_text_transformed(x, y, text, 4, 4, 0);

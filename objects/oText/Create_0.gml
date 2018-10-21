@@ -2,8 +2,8 @@
 
 alarm[0] = 30;
 
-direction = 45;
-speed = 5;
-gravity = 0.4;
+
+speed = irandom_range(4, 8);
+gravity = 0.3;
 
 text = "";
