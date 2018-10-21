@@ -1,8 +1,8 @@
 {
-    "id": "f1e7265f-5f05-4ebb-8212-3a672009f123",
+    "id": "f0bd3691-6752-418e-ac59-66434cef3b71",
     "modelName": "GMScript",
     "mvc": "1.0",
-    "name": "polygon_value_pulse",
+    "name": "pulse_polygon_value",
     "IsCompatibility": false,
     "IsDnD": false
 }
