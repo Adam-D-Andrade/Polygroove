@@ -1,4 +1,20 @@
-// Purple/blue rectangles (viridis approved)
+// Projectile particle (for shooting enemies?)
+global.ptProjectile = part_type_create();
+part_type_shape(global.ptProjectile,pt_shape_disk);
+part_type_size(global.ptProjectile,0.10,0.11,0,0);
+part_type_scale(global.ptProjectile,2.71,0.29);
+part_type_color3(global.ptProjectile,4050544,8089632,8235142);
+part_type_alpha3(global.ptProjectile,0.71,0.75,0.05);
+part_type_speed(global.ptProjectile,2.01,4.55,-0.03,0);
+part_type_direction(global.ptProjectile,0,359,1,0);
+part_type_gravity(global.ptProjectile,1,270);
+part_type_orientation(global.ptProjectile,0,0,0,0,1);
+part_type_blend(global.ptProjectile,1);
+part_type_life(global.ptProjectile,1,35);
+
+
+
+// Purple/blue rectangles
 global.ptPurpleRectangles = part_type_create();
 part_type_shape(global.ptPurpleRectangles,pt_shape_square);
 part_type_size(global.ptPurpleRectangles,0.10,0.16,0,0);
@@ -13,7 +29,7 @@ part_type_blend(global.ptPurpleRectangles,1);
 part_type_life(global.ptPurpleRectangles,59,85);
 
 
-// Green squares (maybe for a dying square enemy) (viridis approved)
+// Green squares (maybe for a dying square enemy)
 global.ptGreenSquares = part_type_create();
 part_type_shape(global.ptGreenSquares,pt_shape_square);
 part_type_size(global.ptGreenSquares,0.10,0.22,0,0);
@@ -27,7 +43,7 @@ part_type_blend(global.ptGreenSquares,1);
 part_type_life(global.ptGreenSquares,65,102);
 
 
-// Yellow lines of light (looks awesome) (viridis approved)
+// Yellow lines of light (looks awesome)
 global.ptYellowLines = part_type_create();
 part_type_shape(global.ptYellowLines,pt_shape_line);
 part_type_size(global.ptYellowLines,0.30,0.90,0,0);
@@ -41,7 +57,7 @@ part_type_blend(global.ptYellowLines,1);
 part_type_life(global.ptYellowLines,48,56);
 
 
-// Wiggly tight hoops (viridis approved)
+// Wiggly tight hoops
 global.ptWiggleHoops = part_type_create();
 part_type_shape(global.ptWiggleHoops,pt_shape_ring);
 part_type_size(global.ptWiggleHoops,0.11,0.41,0,0);
@@ -58,7 +74,7 @@ part_type_life(global.ptWiggleHoops,36,57);
 // Tiny star-like dots (they're white)
 global.ptStarDots = part_type_create();
 part_type_shape(global.ptStarDots,pt_shape_pixel);
-part_type_size(global.ptStarDots,0.10,0.10,0,0);
+part_type_size(global.ptStarDots,0.30,0.30,0,0);
 part_type_scale(global.ptStarDots,3.00,1.25);
 part_type_color3(global.ptStarDots,11780266,9471641,8748662);
 part_type_alpha3(global.ptStarDots,0.91,0.77,0.01);
