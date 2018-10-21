@@ -8,8 +8,11 @@ global.colorTeal = make_color_rgb(32,112,123);
 global.colorGreen = make_color_rgb(112,206,61);
 global.colorYellow = make_color_rgb(252,229,30);
 
+// Particle system
+global.particleSystem = part_system_create();
+part_system_depth(global.particleSystem,0);
 
-global.beatsPerSecond = 60/60;
+global.beatsPerSecond = 60/140;
 
 //enum to get values from array on how close we were!
 enum r {
