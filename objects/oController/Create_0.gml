@@ -1,5 +1,5 @@
 /// @description
-global.custom_debug_mode = true;
+global.custom_debug_mode = false;
 
 // Colours
 global.colorPurple = make_color_rgb(52,0,66);
@@ -8,7 +8,24 @@ global.colorTeal = make_color_rgb(32,112,123);
 global.colorGreen = make_color_rgb(112,206,61);
 global.colorYellow = make_color_rgb(252,229,30);
 
+
 global.beatsPerSecond = 60/130;
+
+//enum to get values from array on how close we were!
+enum r {
+	bad,
+	good,
+	great,
+	perfect
+}
+
+//Initialize the array
+global.accuracy = [];
+global.accuracy[r.bad] = 0;
+global.accuracy[r.good] = 0;
+global.accuracy[r.great] = 0;
+global.accuracy[r.perfect] = 0;
+
 
 var rm_height = room_height;
 var rm_width = room_width;
