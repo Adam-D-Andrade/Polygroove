@@ -6,13 +6,6 @@ move_dir[2] = keyboard_check_pressed(ord("W"));
 move_dir[3] = keyboard_check_pressed(ord("S"));
 
 
-var x_movement = 64;
-var y_movement = 64;
-
-var center_proximity_limit = 64;
-var x_limit = 120;
-var y_limit = 140;
-
 if !moving{
 	for (var i = 0; i < array_length_1d(move_dir) -1; i++ ){
 		if (move_dir[i]){

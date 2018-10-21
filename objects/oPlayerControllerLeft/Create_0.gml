@@ -5,6 +5,14 @@ moving = false;
 target_x = x;
 target_y = y;
 
+x_movement = 64;
+y_movement = 64;
+
+center_proximity_limit = 64;
+x_limit = 120;
+y_limit = 140;
+
+
 enum LC_key {
 	left, 
 	right,
