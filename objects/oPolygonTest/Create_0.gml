@@ -11,3 +11,4 @@ growing_status = true;
 pulse_magnitude = 5;
 max_pulse = 40;
 min_pulse = 10;
+
