@@ -1,5 +1,5 @@
 /// @description
-
+global.debug_mode = true;
 
 global.beatsPerSecond = 60/130;
 
@@ -16,10 +16,10 @@ var centre_x = rm_width/2;
 var centre_y = rm_height/2;
 
 if !instance_exists(oPlayerControllerLeft) {
-	instance_create_layer(centre_x, centre_y, "Instances", oPlayerControllerLeft)
+	instance_create_layer(centre_x-100, centre_y, "Instances", oPlayerControllerLeft)
 }
 if !instance_exists(oPlayerControllerRight) {
-	instance_create_layer(centre_x, centre_y, "Instances", oPlayerControllerRight)
+	instance_create_layer(centre_x+100, centre_y, "Instances", oPlayerControllerRight)
 }
 if !instance_exists(oCenterPoint) {
 	instance_create_layer(centre_x, centre_y + 200, "Instances", oCenterPoint); 
