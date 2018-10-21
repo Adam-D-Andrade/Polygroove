@@ -1,6 +1,7 @@
 /// @description
 global.custom_debug_mode = false;
 
+global.level_counter = 0;
 
 enum audiotable{
 	track,
@@ -43,6 +44,12 @@ audio_table[# audiotable.bars, level.four] = 62;
 audio_table[# audiotable.barStart, level.four] = 12;
 audio_table[# audiotable.barEnd, level.four] = 60;
 
+<<<<<<< HEAD
+show_debug_message(audio_table);
+
+next_level = false;
+=======
+>>>>>>> c5ba0f816efce903a81cc5fc612ece7b21cdffc8
 
 //enum to get values from array on how close we were!
 enum r {
