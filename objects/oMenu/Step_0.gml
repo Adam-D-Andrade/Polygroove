@@ -30,6 +30,7 @@ var push;
 push = max(keyboard_check_released(vk_enter), keyboard_check_released(vk_space),0);
 
 if (push == 1) {
+	audio_stop_all();
 	audio_play_sound(sMenuSelect,1,false);
-	call_menu();	
+	call_menu();
 }
