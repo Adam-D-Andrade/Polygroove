@@ -6,9 +6,6 @@ move_dir[2] = keyboard_check_pressed(ord("W"));
 move_dir[3] = keyboard_check_pressed(ord("S"));
 
 
-
-
-
 if (move_dir[LC_key.left]){
 	if (global.accuracy[r.perfect]) {
 		target_x = ( x - x_limit < 0) ? x : x - x_movement;

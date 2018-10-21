@@ -375,14 +375,6 @@
             }
         },
         {
-            "Key": "c380c463-7c74-4ab0-81d8-e61f30fef5be",
-            "Value": {
-                "id": "2dc03fb7-47d1-4bfa-9c4b-2fc9abd32ef3",
-                "resourcePath": "objects\\oPlayerController\\oPlayerController.yy",
-                "resourceType": "GMObject"
-            }
-        },
-        {
             "Key": "c5b564d5-d56f-4afc-8892-f222d74fc5c6",
             "Value": {
                 "id": "2398205d-9858-41f1-8aa9-e4ef8c01fed8",
