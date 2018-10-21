@@ -159,6 +159,14 @@
             }
         },
         {
+            "Key": "3dc68692-a67d-446e-91a2-8cac0a0dde3e",
+            "Value": {
+                "id": "7f0e635c-4e74-440d-a7c9-f483cc810f9d",
+                "resourcePath": "sounds\\mMenuMusic\\mMenuMusic.yy",
+                "resourceType": "GMSound"
+            }
+        },
+        {
             "Key": "40220e9f-df4b-43a6-95e9-9581c3d5aaca",
             "Value": {
                 "id": "519c5136-e98f-4819-b6e4-654f9f8cb27d",

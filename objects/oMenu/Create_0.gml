@@ -16,3 +16,6 @@ rotation = 0;
 // Pulsing stuff
 growing_status = true;
 pulse_magnitude = 0.25;
+
+// Menu music
+audio_play_sound(mMenuMusic,1,true);
