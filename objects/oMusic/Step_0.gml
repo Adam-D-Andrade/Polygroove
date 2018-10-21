@@ -3,7 +3,7 @@
 
 if (time_tracking){
 	time += (delta_time*0.000001);
-	beats += (delta_time*0.001) mod (60/global.beatsPerSecond);  // This was hardcoded to 130 previously?
+	beats += (delta_time*0.001) mod (60/global.beatsPerMinute);  // This was hardcoded to 130 previ
 }
 
 global.target_value = time mod (global.beatsPerSecond);
