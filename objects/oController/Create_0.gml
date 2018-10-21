@@ -5,7 +5,47 @@ global.beatsPerMinute = 115;
 global.beatsPerSecond = 60/global.beatsPerMinute;
 
 
-//audio_table = ds_grid_create()
+enum audiotable{
+	track,
+	bpm,
+	bars,
+	barStart,
+	barEnd
+}
+
+enum level {
+	one,
+	two,
+	three,
+	four
+}
+
+audio_table = ds_grid_create(6, 4);
+
+audio_table[# audiotable.track, level.one] = audio_get_name(mTrack5_115bpm);
+audio_table[# audiotable.bpm, level.one] = 115;
+audio_table[# audiotable.bars, level.one] = 57;
+audio_table[# audiotable.barStart, level.one] = 5;
+audio_table[# audiotable.barEnd, level.one] = 55;
+
+audio_table[# audiotable.track, level.two] = audio_get_name(mTrack1_130bpm);
+audio_table[# audiotable.bpm, level.two] = 130;
+audio_table[# audiotable.bars, level.two] = 46;
+audio_table[# audiotable.barStart, level.two] = 1;
+audio_table[# audiotable.barEnd, level.two] = 41;
+
+audio_table[# audiotable.track, level.three] = audio_get_name(mTrack2_130bpm);
+audio_table[# audiotable.bpm, level.three] = 130;
+audio_table[# audiotable.bars, level.three] = 57;
+audio_table[# audiotable.barStart, level.three] = 9;
+audio_table[# audiotable.barEnd, level.three] = 57;
+
+audio_table[# audiotable.track, level.four] = audio_get_name(mTrack3_135bpm);
+audio_table[# audiotable.bpm, level.four] = 135;
+audio_table[# audiotable.bars, level.four] = 62;
+audio_table[# audiotable.barStart, level.four] = 13;
+audio_table[# audiotable.barEnd, level.four] = 61;
+
 
 
 
