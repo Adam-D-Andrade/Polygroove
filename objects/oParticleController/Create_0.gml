@@ -1,3 +1,18 @@
+// Losing a life (green squares)
+global.ptLoseLife = part_type_create();
+part_type_shape(global.ptLoseLife,pt_shape_square);
+part_type_size(global.ptLoseLife,0.10,0.20,0,0);
+part_type_scale(global.ptLoseLife,1,1);
+part_type_color1(global.ptLoseLife,4050544);
+part_type_alpha2(global.ptLoseLife,1,0);
+part_type_speed(global.ptLoseLife,0.70,1,0,0.50);
+part_type_direction(global.ptLoseLife,0,359,0,0);
+part_type_gravity(global.ptLoseLife,0.10,270);
+part_type_orientation(global.ptLoseLife,0,0,0,0,1);
+part_type_blend(global.ptLoseLife,1);
+part_type_life(global.ptLoseLife,30,60);
+
+
 // Projectile particle (for shooting enemies?)
 global.ptProjectile = part_type_create();
 part_type_shape(global.ptProjectile,pt_shape_disk);

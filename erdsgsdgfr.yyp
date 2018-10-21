@@ -335,6 +335,14 @@
             }
         },
         {
+            "Key": "7adf316b-90c7-4ee1-af6f-25befd2169e2",
+            "Value": {
+                "id": "aba67b8a-d722-44ce-a264-c91a666feab0",
+                "resourcePath": "sounds\\sndDamage\\sndDamage.yy",
+                "resourceType": "GMSound"
+            }
+        },
+        {
             "Key": "80c92590-c8d3-4237-ac09-19d5fba489d7",
             "Value": {
                 "id": "95490da5-8991-4507-94ec-09df423744f5",
