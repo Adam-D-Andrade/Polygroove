@@ -161,3 +161,4 @@ if (flag == false){
 	alarm[0] = 20;
 }
 
+rot += 3;

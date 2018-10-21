@@ -140,3 +140,5 @@ if (flag == false){
 }
 
 
+//Instance Variables
+rot += 3;

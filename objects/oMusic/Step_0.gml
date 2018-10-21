@@ -24,8 +24,15 @@ if (global.target_value >= -0.05) and (global.target_value <= 0.05){
 			//Forest: placer the part_particles_create code here
 		}
 		
-		with instance_create_layer(x,y, "Instances", oParEnemy) {
+		with instance_create_layer(x,-32, "Instances", oParEnemy) {
 			x = choose(xLeft[irandom_range(0,5)], xRight[irandom_range(0,5)]);
+			rotation = 359;
+			scale = 0.8;
+		}
+		
+		with(oPlayerControllerLeft){
+			rotation = 359;
+			scale = 0.8;
 		}
 		
 		//prevent from making instances too fast

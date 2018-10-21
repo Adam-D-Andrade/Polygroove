@@ -21,4 +21,8 @@ enum RC_key {
 	down
 }
 
-
+ 
+//Life Drawing Variables
+rot = 0;
+scale = 0.4;
+current_lives = global.PlayerLives;

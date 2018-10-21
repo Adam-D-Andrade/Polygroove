@@ -6,7 +6,8 @@ var sprite_offset = sprite_get_xoffset(sprPlayer);
 var left_offset = 100;//player start x
 var right_offset = 100;
 
-
+scale = 1;
+rotation = 0;
 
 //Position is Relative to center, 0 is clsoest x positiong the player can be to the center line
 xLeft[0] = half_w - left_offset;
