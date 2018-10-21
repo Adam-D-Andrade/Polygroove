@@ -4,7 +4,7 @@ move_dir[0] = keyboard_check_pressed(ord("A"));
 move_dir[1] = keyboard_check_pressed(ord("D"));
 move_dir[2] = keyboard_check_pressed(ord("W"));
 move_dir[3] = keyboard_check_pressed(ord("S"));
-
+shooting = keyboard_check_pressed(vk_space);
 
 if (move_dir[LC_key.left]){
 	if (global.accuracy[r.perfect]) {
@@ -114,7 +114,9 @@ if (move_dir[LC_key.down]){
 	}
 }
 
-
+if (shooting){
+	instance_create_layer(x, y, "Instances", oBullet);
+}
 
 x = lerp(x, target_x, 0.5);
 y = lerp(y, target_y, 0.5);

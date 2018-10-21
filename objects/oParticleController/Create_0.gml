@@ -2,7 +2,7 @@
 global.ptProjectile = part_type_create();
 part_type_shape(global.ptProjectile,pt_shape_disk);
 part_type_size(global.ptProjectile,0.10,0.11,0,0);
-part_type_scale(global.ptProjectile,2.71,0.29);
+part_type_scale(global.ptProjectile,3.0,0.4);
 part_type_color3(global.ptProjectile,4050544,8089632,8235142);
 part_type_alpha3(global.ptProjectile,0.71,0.75,0.05);
 part_type_speed(global.ptProjectile,2.01,4.55,-0.03,0);
@@ -10,7 +10,7 @@ part_type_direction(global.ptProjectile,0,359,1,0);
 part_type_gravity(global.ptProjectile,1,270);
 part_type_orientation(global.ptProjectile,0,0,0,0,1);
 part_type_blend(global.ptProjectile,1);
-part_type_life(global.ptProjectile,1,35);
+part_type_life(global.ptProjectile,5,20);
 
 
 
