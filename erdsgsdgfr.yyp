@@ -207,6 +207,14 @@
             }
         },
         {
+            "Key": "53ce3246-dc12-41d4-8cab-f7a453c2635c",
+            "Value": {
+                "id": "444322ba-9659-4ddd-b505-51e44c50d7f1",
+                "resourcePath": "fonts\\fntMenu\\fntMenu.yy",
+                "resourceType": "GMFont"
+            }
+        },
+        {
             "Key": "5479caef-43c0-4396-9ef6-29ff4c587a3c",
             "Value": {
                 "id": "3f9c4acf-b1f0-4986-8b34-f9a03db92cac",
@@ -223,6 +231,14 @@
             }
         },
         {
+            "Key": "58147ad7-f428-4a73-8531-c151ce037d43",
+            "Value": {
+                "id": "e3a42449-d427-4568-a8ba-3d29db7b609a",
+                "resourcePath": "objects\\oMenu\\oMenu.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "5a184bab-2731-41f5-9292-caefb063152c",
             "Value": {
                 "id": "bdb96826-b423-4283-a460-1d43e7bc06b9",
@@ -235,6 +251,14 @@
             "Value": {
                 "id": "1caf1827-c8d8-49b5-bdbd-c9bca219d631",
                 "resourcePath": "objects\\oCamera\\oCamera.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "5fdeecbd-c9c2-42aa-b082-41a901b7b58d",
+            "Value": {
+                "id": "aa6995dd-3458-4aa2-aa26-ad12ebd84dcc",
+                "resourcePath": "objects\\oBackgroundController\\oBackgroundController.yy",
                 "resourceType": "GMObject"
             }
         },
@@ -471,6 +495,14 @@
             }
         },
         {
+            "Key": "b8bff2f8-7865-4d5b-af9b-10f646cdee86",
+            "Value": {
+                "id": "40d34848-beda-4459-9287-a3850ae1ddf5",
+                "resourcePath": "scripts\\call_menu\\call_menu.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "bfb3629d-c5ff-49fe-96e5-779bda5b7f08",
             "Value": {
                 "id": "fabfd7b5-1a6d-45b5-b8cb-defd56d416e2",
@@ -619,7 +651,8 @@
         "80c92590-c8d3-4237-ac09-19d5fba489d7",
         "30bbc31b-a623-4781-88f8-f726f27c826f",
         "f0bd3691-6752-418e-ac59-66434cef3b71",
-        "9c49e088-5e28-48b6-af16-6c61eaf54429"
+        "9c49e088-5e28-48b6-af16-6c61eaf54429",
+        "b8bff2f8-7865-4d5b-af9b-10f646cdee86"
     ],
     "tutorial": ""
 }
