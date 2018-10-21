@@ -127,9 +127,9 @@ if (!moving){
 	#endregion 
 }
 
-if (shooting){
-	instance_create_layer(x, y, "Instances", oBullet);
-}
+//if (shooting){
+//	instance_create_layer(x, y, "Instances", oBullet);
+//}
 
 x = lerp(x, target_x, 0.5);
 y = lerp(y, target_y, 0.5);
