@@ -87,6 +87,14 @@
             }
         },
         {
+            "Key": "2feb0870-6152-402e-b4f8-2e2f70682caf",
+            "Value": {
+                "id": "cf5d5dd3-0c9e-4e86-9874-fbac7f99ed95",
+                "resourcePath": "sounds\\mTrack5_115bpm\\mTrack5_115bpm.yy",
+                "resourceType": "GMSound"
+            }
+        },
+        {
             "Key": "30bbc31b-a623-4781-88f8-f726f27c826f",
             "Value": {
                 "id": "610d40c4-cc0d-498f-bb48-54f07eca1f21",

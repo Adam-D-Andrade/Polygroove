@@ -12,7 +12,7 @@ global.colorYellow = make_color_rgb(252,229,30);
 global.particleSystem = part_system_create();
 part_system_depth(global.particleSystem,0);
 
-global.beatsPerSecond = 60/135;
+global.beatsPerSecond = 60/115;
 
 //enum to get values from array on how close we were!
 enum r {
