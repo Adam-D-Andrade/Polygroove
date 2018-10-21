@@ -1,5 +1,5 @@
 // Play sound
-audio_play_sound(sBullet1,1,false);
+audio_play_sound(sBullet,1,false);
 
 // Speed
 vspeed = -10;
