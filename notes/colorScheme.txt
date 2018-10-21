@@ -1,0 +1,9 @@
+Sampled 5 points from the Viridis colour scheme
+(https://cran.r-project.org/web/packages/viridis/vignettes/intro-to-viridis.html)
+
+Values in rgb:
+purple	52,0,66
+blue	44,65,121
+teal	32,112,123
+green	112,206,61
+yellow	252,229,30

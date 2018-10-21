@@ -7,9 +7,9 @@
 /// @param  rot
 /// @param  thick
 /// @param  color
-/// @description Draw a polygon of n number of sdes using a thickness. you can evenr create a solid
-    //polygon by using thickness the same as the radius. Radius is the overall size of polygon.
-	//Thickness is thickness of outter line.
+/// @description Draw a polygon of n number of sides using a thickness, you can even create a solid
+    //polygon by using a thickness the same as the radius. Radius is the overall size of polygon.
+	//Thickness is thickness of outer line.
     
 var _centerX    = argument0;
 var _centerY    = argument1; 
@@ -31,7 +31,7 @@ for (var _i = 0; _i <= _points; _i++)
     draw_vertex(_centerX + lengthdir_x(_radius, _drawDir), _centerY + lengthdir_y(_radius, _drawDir));
     draw_vertex(_centerX + lengthdir_x(_radius - _thickness, _drawDir), _centerY + lengthdir_y(_radius - _thickness, _drawDir));      
 }
-    
+
 draw_primitive_end();
 draw_set_color(c_white);
 

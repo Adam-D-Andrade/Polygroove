@@ -1,6 +1,13 @@
 /// @description
 global.debug_mode = true;
 
+// Colours
+global.colorPurple = make_color_rgb(52,0,66);
+global.colorBlue = make_color_rgb(44,65,121);
+global.colorTeal = make_color_rgb(32,112,123);
+global.colorGreen = make_color_rgb(112,206,61);
+global.colorYellow = make_color_rgb(252,229,30);
+
 global.beatsPerSecond = 60/130;
 
 var rm_height = room_height;
