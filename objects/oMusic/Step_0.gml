@@ -24,8 +24,6 @@ if (global.target_value >= -0.05) and (global.target_value <= 0.05){
 		bpmTrigger = !bpmTrigger;
 		alarm[0] = 5;
 	}
-
-	
 }
 
 

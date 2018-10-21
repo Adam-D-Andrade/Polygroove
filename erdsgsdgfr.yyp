@@ -111,6 +111,14 @@
             }
         },
         {
+            "Key": "34fcff38-15a7-4ff5-8997-d1a4696280e0",
+            "Value": {
+                "id": "fe22aef6-261e-4673-ac05-73247d416292",
+                "resourcePath": "objects\\oBackgroundPolygon_5\\oBackgroundPolygon_5.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "366b3dbf-dc83-4140-a73a-cbac19763862",
             "Value": {
                 "id": "2e1d8b4c-5fd2-49bb-a5cc-e7cb62c521a2",
@@ -143,10 +151,26 @@
             }
         },
         {
+            "Key": "48fe51cd-722d-45a4-8dd9-19525105701c",
+            "Value": {
+                "id": "680e7057-01e8-471f-b860-a0460e564261",
+                "resourcePath": "objects\\oBackgroundPolygon_3\\oBackgroundPolygon_3.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "49a7c112-7302-491b-ab42-7e9b6a1c9588",
             "Value": {
                 "id": "dbc32805-5327-4872-9e17-bdeb6551f610",
                 "resourcePath": "objects\\oTimer\\oTimer.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "4e52f6b1-4f0a-4a03-9d82-9fe2a7e1a3f7",
+            "Value": {
+                "id": "c31d75e2-4445-4f0d-952f-8593478c8a7e",
+                "resourcePath": "objects\\oBackgroundPolygon_4\\oBackgroundPolygon_4.yy",
                 "resourceType": "GMObject"
             }
         },
@@ -172,6 +196,14 @@
                 "id": "90c7ffc6-bbec-426e-8974-994101a7e54b",
                 "resourcePath": "scripts\\SpringTo\\SpringTo.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "53a65d60-90e2-4b96-b3da-ca68db8349e9",
+            "Value": {
+                "id": "94d10b3d-b707-45cf-b6e1-808e4e7e507b",
+                "resourcePath": "objects\\oBackgroundPolygon_2\\oBackgroundPolygon_2.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -391,6 +423,14 @@
             }
         },
         {
+            "Key": "a5384218-f858-40ff-9292-d6c03f28bc0a",
+            "Value": {
+                "id": "d75a6e42-ff85-4287-a9c0-64a0295feb7f",
+                "resourcePath": "views\\a5384218-f858-40ff-9292-d6c03f28bc0a.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
             "Key": "a5c38813-3398-40c5-901a-f7b346cc86fd",
             "Value": {
                 "id": "80b43276-58f3-496f-9797-df3ec8576932",
@@ -420,6 +460,14 @@
                 "id": "8369d786-3da8-400d-9e18-76ca0365c144",
                 "resourcePath": "options\\linux\\options_linux.yy",
                 "resourceType": "GMLinuxOptions"
+            }
+        },
+        {
+            "Key": "b185019d-32e2-46cc-95b0-beb819bb9101",
+            "Value": {
+                "id": "b0f9d470-9f2d-4960-8760-cec40ce21ffa",
+                "resourcePath": "objects\\oBackgroundPolygon_1\\oBackgroundPolygon_1.yy",
+                "resourceType": "GMObject"
             }
         },
         {
