@@ -2,11 +2,12 @@
 
 audio_group_load(audio_group_music);
 
-beats_per_min = 0;
 total_beats = 0;
-max_beats_on_track = 0;
-start_beat = 0;
-end_beat = 0;
+
+beats_per_min = oController.audio_table[# audiotable.bpm, level.one];
+max_beats_on_track = oController.audio_table[# audiotable.bars, level.one] * 4;
+start_beat = oController.audio_table[# audiotable.barStart, level.one] * 4;
+end_beat = oController.audio_table[# audiotable.barEnd, level.one] * 4;
 
 global.beatsPerMinute = beats_per_min;
 global.beatsPerSecond = 60/beats_per_min;
@@ -16,8 +17,6 @@ global.target_value = 0;
 start_time = 0;
 time_tracking = false;
 time = 0;
-
-
 
 bpm = round(global.beatsPerSecond * 1000) //- current_time;
 test = 0;
