@@ -43,7 +43,7 @@ audio_table[# audiotable.bars, level.four] = 62;
 audio_table[# audiotable.barStart, level.four] = 12;
 audio_table[# audiotable.barEnd, level.four] = 60;
 
-
+show_debug_message(audio_table)
 
 
 
