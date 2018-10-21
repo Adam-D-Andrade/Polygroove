@@ -183,6 +183,14 @@
             }
         },
         {
+            "Key": "5cd7db23-23c5-44d9-a3e6-2b1f65ec2a15",
+            "Value": {
+                "id": "1caf1827-c8d8-49b5-bdbd-c9bca219d631",
+                "resourcePath": "objects\\oCamera\\oCamera.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "6236f0d9-ce80-4da9-9923-b351200f44ae",
             "Value": {
                 "id": "19bbccdc-7d83-4e2d-8c09-60100ca6d12b",
@@ -351,6 +359,14 @@
             }
         },
         {
+            "Key": "9c49e088-5e28-48b6-af16-6c61eaf54429",
+            "Value": {
+                "id": "b2cb0901-bb0b-4ca6-9a0b-8cea9c3efeab",
+                "resourcePath": "scripts\\Approach\\Approach.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "a128950b-5063-4876-b4a6-b99dbd2ea6d1",
             "Value": {
                 "id": "475654ab-2ba3-4320-88a2-0c9b45ac5a86",
@@ -447,6 +463,14 @@
             }
         },
         {
+            "Key": "dfd6e5af-d487-47c7-a308-538f966726fa",
+            "Value": {
+                "id": "1f50d4e4-4cc9-42b6-a713-c25129918692",
+                "resourcePath": "objects\\oParEnemy\\oParEnemy.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "e3fbb68a-042c-476e-bf74-623f1fc81468",
             "Value": {
                 "id": "c9a5075f-e33c-42b7-b92f-26ca2d13bff3",
@@ -530,7 +554,8 @@
         "a5c38813-3398-40c5-901a-f7b346cc86fd",
         "80c92590-c8d3-4237-ac09-19d5fba489d7",
         "30bbc31b-a623-4781-88f8-f726f27c826f",
-        "f0bd3691-6752-418e-ac59-66434cef3b71"
+        "f0bd3691-6752-418e-ac59-66434cef3b71",
+        "9c49e088-5e28-48b6-af16-6c61eaf54429"
     ],
     "tutorial": ""
 }

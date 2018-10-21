@@ -14,8 +14,10 @@ if (global.target_value >= -0.05) and (global.target_value <= 0.05){
 	if (bpmTrigger){
 		instance_create_layer(x, y, "Instances", oInputSignal);
 		with(oCenterPoint) {
-			image_xscale = 2;
-			image_yscale = 2;
+			radius = 50;
+			line_width = 20;
+			//we should create some particle effect here on the beat
+			//Forest: placer the part_particles_create code here
 		}
 		
 		//prevent from making instances too fast

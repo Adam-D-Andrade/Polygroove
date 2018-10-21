@@ -6,36 +6,31 @@ move_dir[2] = keyboard_check_pressed(ord("W"));
 move_dir[3] = keyboard_check_pressed(ord("S"));
 shooting = keyboard_check_pressed(vk_space);
 
-if (move_dir[LC_key.left]){
-	if (global.accuracy[r.perfect]) {
-		if (!moving){
+if (!moving){
+	#region Moving Left
+	if (move_dir[LC_key.left]){
+		if (global.accuracy[r.perfect]) {		
 			target_x = ( x - x_limit < 0) ? x : x - x_movement;
 			with (instance_create_layer(oCenterPoint.x, oCenterPoint.y, "Instances", oText)){
 				text = "Perfect!";
 			}
-			moving = true;
+			moving = true;		
 		}
-	}
-	else if global.accuracy[r.great] {
-		if (!moving){
+		else if global.accuracy[r.great] {
 			target_x = ( x - x_limit < 0) ? x : x - x_movement;
 			moving = true;
 			with (instance_create_layer(oCenterPoint.x, oCenterPoint.y, "Instances", oText)){
 				text = "Great!";
-			}
+			}	
 		}
-	}
-	else if global.accuracy[r.good]{
-		if (!moving){
+		else if global.accuracy[r.good]{		
 			target_x = ( x - x_limit < 0) ? x : x - x_movement;
 			moving = true;
 			with (instance_create_layer(oCenterPoint.x, oCenterPoint.y, "Instances", oText)){
 				text = "Good!";
-			}
+			}		
 		}
-	}
-	else {
-		if (!moving){
+		else {
 			moving = true;
 			with (instance_create_layer(oCenterPoint.x, oCenterPoint.y, "Instances", oText)){
 				text = "Bad!";
@@ -43,38 +38,35 @@ if (move_dir[LC_key.left]){
 			target_x = x;
 		}
 	}
-}
+	#endregion
 	
-if (move_dir[LC_key.right]){
-	if (global.accuracy[r.perfect]) {
-		if (!moving){
+	#region Moving Right
+	if (move_dir[LC_key.right]){
+		if (global.accuracy[r.perfect]) {
 			moving = true;
 			target_x =( x + x_limit > room_width/2) ? x : x + x_movement;
 			with (instance_create_layer(oCenterPoint.x, oCenterPoint.y, "Instances", oText)){
 				text = "Perfect!";
 			}
 		}
-	}
-	else if global.accuracy[r.great] {
-		if (!moving){
+		else if global.accuracy[r.great] {
+		
 			moving = true;
 			target_x =( x + x_limit > room_width/2) ? x : x + x_movement;
 			with (instance_create_layer(oCenterPoint.x, oCenterPoint.y, "Instances", oText)){
 				text = "Great!";
 			}
+		
 		}
-	}
-	else if global.accuracy[r.good]{
-		if (!moving){
+		else if global.accuracy[r.good]{
+		
 			moving = true;
 			target_x =( x + x_limit > room_width/2) ? x : x + x_movement;
 			with (instance_create_layer(oCenterPoint.x, oCenterPoint.y, "Instances", oText)){
 				text = "Good!";
 			}
 		}
-	}
-	else {
-		if (!moving){
+		else {
 			moving = true;
 			with (instance_create_layer(oCenterPoint.x, oCenterPoint.y, "Instances", oText)){
 				text = "Bad!";
@@ -82,78 +74,73 @@ if (move_dir[LC_key.right]){
 			target_x = x;
 		}
 	}
-}
+	#endregion
 	
-if (move_dir[LC_key.up]){
-	if (global.accuracy[r.perfect]) {
-		if (!moving){
+	#region Moving Up
+	if (move_dir[LC_key.up]){
+		if (global.accuracy[r.perfect]) {
+		
 			moving = true;
 			target_y = (y - y_limit < 0) ? y : y - y_movement;
 			with (instance_create_layer(oCenterPoint.x, oCenterPoint.y, "Instances", oText)){
 				text = "Perfect!";
 			}
+		
 		}
-	}
-	else if global.accuracy[r.great] {
-		if (!moving){
+		else if global.accuracy[r.great] {
+		
 			moving = true;
 			target_y = (y - y_limit < 0) ? y : y - y_movement;
+			with (instance_create_layer(oCenterPoint.x, oCenterPoint.y, "Instances", oText)){
+				text = "Great!";
+			}
+		}
+		
+		else if global.accuracy[r.good]{		
+			moving = true;
+			target_y = (y - y_limit < 0) ? y : y - y_movement;
+			with (instance_create_layer(oCenterPoint.x, oCenterPoint.y, "Instances", oText)){
+				text = "Good!";
+			}		
+		}
+		else {
+		
+				moving = true;
 				with (instance_create_layer(oCenterPoint.x, oCenterPoint.y, "Instances", oText)){
-					text = "Great!";
+					text = "Bad!";
 				}
-			}
-		}
-	else if global.accuracy[r.good]{
-		if (!moving){
-			moving = true;
-			target_y = (y - y_limit < 0) ? y : y - y_movement;
-			with (instance_create_layer(oCenterPoint.x, oCenterPoint.y, "Instances", oText)){
-				text = "Good!";
-			}
+				target_y = y;
+		
 		}
 	}
-	else {
-		if (!moving){
-			moving = true;
-			with (instance_create_layer(oCenterPoint.x, oCenterPoint.y, "Instances", oText)){
-				text = "Bad!";
-			}
-			target_y = y;
-		}
-	}
-}
+	#endregion
 
-#region Moving Down 
-if (move_dir[LC_key.down]){
-	if (global.accuracy[r.perfect]) {
-		if (!moving){
+	#region Moving Down 
+	if (move_dir[LC_key.down]){
+		if (global.accuracy[r.perfect]) {
 			moving = true;
 			target_y = (y + y_limit > room_height) ? y :  y + y_movement;
 			with (instance_create_layer(oCenterPoint.x, oCenterPoint.y, "Instances", oText)){
 				text = "Perfect!";
 			}
+		
 		}
-	}
-	else if global.accuracy[r.great] {
-		if (!moving){
+		else if global.accuracy[r.great] {
 			moving = true;
 			target_y = (y + y_limit > room_height) ? y :  y + y_movement;
 			with (instance_create_layer(oCenterPoint.x, oCenterPoint.y, "Instances", oText)){
 				text = "Great!";
 			}
+		
 		}
-	}
-	else if global.accuracy[r.good]{
-		if (!moving){
+		else if global.accuracy[r.good]{
 			moving = true;
 			target_y = (y + y_limit > room_height) ? y :  y + y_movement;
 			with (instance_create_layer(oCenterPoint.x, oCenterPoint.y, "Instances", oText)){
 				text = "Good!";
 			}
 		}
-	}
-	else {
-		if (!moving){
+		else {
 			moving = true;
 			target_y = y;
 			with (instance_create_layer(oCenterPoint.x, oCenterPoint.y, "Instances", oText)){
@@ -161,9 +148,8 @@ if (move_dir[LC_key.down]){
 			}
 		}
 	}
+	#endregion 
 }
-#endregion 
-
 
 if (shooting){
 	instance_create_layer(x, y, "Instances", oBullet);
