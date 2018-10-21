@@ -183,14 +183,6 @@
             }
         },
         {
-            "Key": "50e7150d-5212-4745-859c-c1ed48637dea",
-            "Value": {
-                "id": "ed202a08-4377-41df-a878-a462c53a46ae",
-                "resourcePath": "objects\\oPause\\oPause.yy",
-                "resourceType": "GMObject"
-            }
-        },
-        {
             "Key": "522a74f8-f7ea-4d16-9c63-97de677c0235",
             "Value": {
                 "id": "4cc46de0-efb0-4823-aaab-72af93bab498",
@@ -380,14 +372,6 @@
                 "id": "129bfc0d-c995-4959-a27f-58914e8fedb6",
                 "resourcePath": "views\\8b5869ed-623c-42b9-abfa-bf7cea30a64e.yy",
                 "resourceType": "GMFolder"
-            }
-        },
-        {
-            "Key": "8d444ec1-a0fc-49dd-b0e0-3241512abc8e",
-            "Value": {
-                "id": "c6d96454-f019-4dd8-ab1c-e56f6bb62875",
-                "resourcePath": "objects\\oDisplayManager\\oDisplayManager.yy",
-                "resourceType": "GMObject"
             }
         },
         {

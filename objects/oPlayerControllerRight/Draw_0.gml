@@ -12,3 +12,8 @@ if (global.custom_debug_mode) {
 					room_height - y_limit + half_height, 
 					true);
 }
+
+
+for (var i = 0; i < current_lives; i++){
+	draw_sprite_ext(sprite_index, 0, room_width - 50 - (20*i), room_height - 22, scale, scale, rot, c_white, 1);
+}
