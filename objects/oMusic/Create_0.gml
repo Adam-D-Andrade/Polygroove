@@ -2,6 +2,7 @@
 
 audio_group_load(audio_group_music);
 
+
 global.target_value = 0;
 
 start_time = 0;

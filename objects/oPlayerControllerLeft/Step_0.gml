@@ -140,5 +140,11 @@ if (flag == false){
 }
 
 
-//Instance Variables
-rot += 3;
+//Current Life Variables for Drawing
+if (scale != 0.4) {
+	scale = Approach(scale, 0.4, 0.01);
+}
+
+if (rot != 0) {
+	rot = lerp(rot, 0, 0.05);//Approach(rot, 0, 2);
+}

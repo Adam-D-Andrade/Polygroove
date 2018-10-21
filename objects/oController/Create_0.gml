@@ -16,6 +16,12 @@ part_system_depth(global.particleSystem,0);
 global.beatsPerMinute = 115;
 global.beatsPerSecond = 60/global.beatsPerMinute;
 
+
+//audio_table = ds_grid_create()
+
+
+
+
 //enum to get values from array on how close we were!
 enum r {
 	bad,
