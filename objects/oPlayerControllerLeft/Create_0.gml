@@ -13,7 +13,6 @@ center_proximity_limit = 64;
 x_limit = 120;
 y_limit = 140;
 
-
 enum LC_key {
 	left, 
 	right,

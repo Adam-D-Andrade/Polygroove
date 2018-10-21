@@ -7,3 +7,4 @@ if instance_exists(oCenterPoint){
 }
 
 dist = 0;
+
