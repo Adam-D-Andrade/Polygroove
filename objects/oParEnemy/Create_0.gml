@@ -9,8 +9,11 @@ var right_offset = 100;
 target_y = 0;
 move = false;
 
-scale = 1;
+//Setup Polygon Drawing 
 rotation = 0;
+InitPolygonVars(3, 20,10, rotation);
+scale = 1;
+//rotation = 0;
 
 //Position is Relative to center, 0 is clsoest x positiong the player can be to the center line
 xLeft[0] = half_w - left_offset;

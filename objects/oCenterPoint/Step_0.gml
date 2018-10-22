@@ -2,8 +2,8 @@
 
 
 
-if (radius != 20) radius = Approach(radius, 20, 0.8);
-if (line_width != 1) line_width = Approach(line_width, 1, 0.8);
+if (scale != 1) scale = lerp(scale, 1, 0.1);
+if (line_width != 1) line_width = lerp(line_width, 1, 0.1);
 
 
 part_particles_create(global.particleSystem, x, y, global.ptYellowLines,1);

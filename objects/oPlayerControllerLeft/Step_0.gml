@@ -38,9 +38,8 @@ if (!moving){
 		}
 	}
 	#endregion
-	
 	#region Moving Right
-	if (move_dir[LC_key.right]){
+	else if (move_dir[LC_key.right]){
 		if (global.accuracy[r.perfect]) {
 			target_x =( x + x_limit > room_width/2) ? x : x + x_movement;
 			with (instance_create_layer(oCenterPoint.x, oCenterPoint.y, "Instances", oText)){
@@ -67,9 +66,8 @@ if (!moving){
 		}
 	}
 	#endregion
-	
 	#region Moving Up
-	if (move_dir[LC_key.up]){
+	else if (move_dir[LC_key.up]){
 		if (global.accuracy[r.perfect]) {
 			target_y = (y - y_limit < 0) ? y : y - y_movement;
 			with (instance_create_layer(oCenterPoint.x, oCenterPoint.y, "Instances", oText)){
@@ -96,9 +94,8 @@ if (!moving){
 		}
 	}
 	#endregion
-
 	#region Moving Down 
-	if (move_dir[LC_key.down]){
+	else if (move_dir[LC_key.down]){
 		if (global.accuracy[r.perfect]) {
 			target_y = (y + y_limit > room_height) ? y :  y + y_movement;
 			with (instance_create_layer(oCenterPoint.x, oCenterPoint.y, "Instances", oText)){
@@ -125,6 +122,16 @@ if (!moving){
 		}
 	}
 	#endregion 
+	//else {
+	//	#region Missed key press
+	
+	//	//no key was pressed
+	//	with (instance_create_layer(oCenterPoint.x, oCenterPoint.y, "Instances", oText)){
+	//		text = "Bad!";
+	//	}
+	//	#endregion
+	//}
+	
 }
 
 //if (shooting){

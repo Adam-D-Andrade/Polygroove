@@ -40,9 +40,8 @@ if (!moving){
 		}
 	}
 	#endregion
-
 	#region Move Right
-	if (move_dir[LC_key.right]){
+	else if (move_dir[LC_key.right]){
 	
 		moving = true;
 	
@@ -75,9 +74,8 @@ if (!moving){
 		}
 	}
 	#endregion
-
 	#region Moving Up
-	if (move_dir[LC_key.up]){
+	else if (move_dir[LC_key.up]){
 	
 		moving = true;
 	
@@ -107,9 +105,8 @@ if (!moving){
 		}
 	}
 	#endregion
-	
 	#region Move Down
-	if (move_dir[LC_key.down]){
+	else if (move_dir[LC_key.down]){
 		moving = true;
 	
 		if (global.accuracy[r.perfect]) {
@@ -138,6 +135,16 @@ if (!moving){
 		}
 	}
 	#endregion
+	//else {
+	//	#region Missed key press
+	
+	//	//no key was pressed
+	//	with (instance_create_layer(oCenterPoint.x, oCenterPoint.y, "Instances", oText)){
+	//		text = "Bad!";
+	//	}
+	//	#endregion
+	//}
+	
 }
 
 //if (moving){

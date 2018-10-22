@@ -6,11 +6,11 @@
 
 
 if (scale != 1) {
-	scale = Approach(scale, 1, 0.5);
+	scale = lerp(scale, 1, 0.1);
 }
 
 if (rotation != 0) {
-	rotation = lerp(rotation, 0, 0.1);
+	rotation = lerp(rotation, 0, 0.05);
 }
 
 if (move == true) {

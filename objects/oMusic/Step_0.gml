@@ -18,16 +18,18 @@ if (global.target_value >= -0.05) and (global.target_value <= 0.05){
 		total_beats++;
 		
 		with(oCenterPoint) {
-			radius = 50;
-			line_width = 20;
+			scale = 3;
+			line_width = 40;
 			
 			//we should create some particle effect here on the beat
 			//Forest: placer the part_particles_create code here
 		}
 		
+		//Within the beats requiring palyer input
 		if (total_beats >= start_beat) && (total_beats <= end_beat){
 			instance_create_layer(x, y, "Instances", oInputSignal);
 
+			//On create, give initial effects
 			with instance_create_layer(x,-32, "Instances", oParEnemy) {
 				x = choose(xLeft[irandom_range(0,5)], xRight[irandom_range(0,5)]);
 				rotation = 359;
@@ -35,34 +37,42 @@ if (global.target_value >= -0.05) and (global.target_value <= 0.05){
 				target_y = y + 64;
 			
 			}
+			
+			//On beat reapply effects
 			with (oParEnemy) {
 				move = true;
-				rotation = 359;
+				rotation = choose(-359,359);
 				scale = 2;
 			}
 		}
 		
 		with(oPlayerControllerLeft){
-			rot = 359;
+			rot = choose(-359, 359);
 			scale = 0.8;
 		}
 		
 		with(oPlayerControllerRight){
-			rot = 359;
+			rot = choose(-359, 359);
 			scale = 0.8;
 		}
 		
-		//prevent from making instances too fast
+		//because of the range value given for the beat, this is required other wise multiple frames
+		//will be returning true and this code will run too many times.
 		bpmTrigger = !bpmTrigger;
 		alarm[0] = 5;
 	}
 }
 #endregion
 
+
+#region End of Song and Level
+
+//end_beat is the last beat of the song requiring player input
 if (total_beats >= end_beat){
 	instance_destroy(oParEnemy);
 }
 
+//max_beats_on_track
 if (total_beats >= max_beats_on_track) {
 	total_beats = 0;
 	global.level_counter++;
@@ -73,4 +83,4 @@ if (total_beats >= max_beats_on_track) {
 	
 }
 
-
+#endregion

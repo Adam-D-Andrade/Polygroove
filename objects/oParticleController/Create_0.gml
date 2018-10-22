@@ -1,21 +1,24 @@
-
-// Yellow squares for dead enemies
-global.ptClearEnemies = part_type_create();
-part_type_shape(global.ptClearEnemies,pt_shape_square);
-part_type_size(global.ptClearEnemies,0.10,0.20,0,0);
-part_type_scale(global.ptClearEnemies,1,1);
-part_type_color1(global.ptClearEnemies,2024956);
-part_type_alpha2(global.ptClearEnemies,1,0);
-part_type_speed(global.ptClearEnemies,0.70,1,0,0.50);
-part_type_direction(global.ptClearEnemies,0,359,0,0);
-part_type_gravity(global.ptClearEnemies,0.10,270);
-part_type_orientation(global.ptClearEnemies,0,0,0,0,1);
-part_type_blend(global.ptClearEnemies,1);
-part_type_life(global.ptClearEnemies,30,60);
+// Particle system
+global.particleSystem = part_system_create();
+part_system_depth(global.particleSystem,0);
 
 
 
 // Losing a life (green squares)
+
+global.ptClearEnemies = part_type_create();
+part_type_shape(global.ptClearEnemies,pt_shape_square);
+part_type_size(global.ptClearEnemies,0.10,0.20,0,0);
+part_type_scale(global.ptClearEnemies,1,1);
+part_type_color1(global.ptClearEnemies,4050544);
+part_type_alpha2(global.ptClearEnemies,1,0);
+part_type_speed(global.ptClearEnemies,0.70,1,0,0.50);
+part_type_direction(global.ptClearEnemies,0,180,0,0);
+part_type_gravity(global.ptClearEnemies,0.10,270);
+part_type_orientation(global.ptClearEnemies,0,0,0,0,1);
+part_type_blend(global.ptClearEnemies,0);
+part_type_life(global.ptClearEnemies,30,60);
+
 global.ptLoseLife = part_type_create();
 part_type_shape(global.ptLoseLife,pt_shape_square);
 part_type_size(global.ptLoseLife,0.10,0.20,0,0);
@@ -116,3 +119,19 @@ part_type_gravity(global.ptStarDots,0,270);
 part_type_orientation(global.ptStarDots,0,0,0,0,0);
 part_type_blend(global.ptStarDots,1);
 part_type_life(global.ptStarDots,52,69);
+
+
+global.ptEnemyDestroy = part_type_create();
+part_type_shape(global.ptEnemyDestroy,pt_shape_sphere);
+part_type_size(global.ptEnemyDestroy,0.41,0.51,0,0);
+part_type_scale(global.ptEnemyDestroy,1,0.20);
+part_type_color1(global.ptEnemyDestroy,8454143);
+part_type_alpha3(global.ptEnemyDestroy,1,0.44,0.00);
+part_type_speed(global.ptEnemyDestroy,2.18,5.94,0.17,0);
+part_type_direction(global.ptEnemyDestroy,0,359,0,0);
+part_type_gravity(global.ptEnemyDestroy,0,270);
+part_type_orientation(global.ptEnemyDestroy,0,0,0,0,1);
+part_type_blend(global.ptEnemyDestroy,1);
+part_type_life(global.ptEnemyDestroy,44,60);
+
+

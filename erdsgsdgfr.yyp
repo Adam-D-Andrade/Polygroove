@@ -34,7 +34,7 @@
             "Key": "041ab27d-fd47-40fe-a20d-145be49c826d",
             "Value": {
                 "id": "ab3e90fd-83ad-41c9-9ec4-aa761591f6b2",
-                "resourcePath": "sprites\\sprTriangle\\sprTriangle.yy",
+                "resourcePath": "sprites\\sprEnemyMask\\sprEnemyMask.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -84,6 +84,14 @@
                 "id": "fa25df94-0356-4dd3-93ea-24413300f9c2",
                 "resourcePath": "sounds\\mTrack1_130bpm\\mTrack1_130bpm.yy",
                 "resourceType": "GMSound"
+            }
+        },
+        {
+            "Key": "16bd49bd-0af0-4490-a6a5-3c6952b64f2d",
+            "Value": {
+                "id": "9eeb1365-ec86-4209-ba14-1586933a4f57",
+                "resourcePath": "views\\16bd49bd-0af0-4490-a6a5-3c6952b64f2d.yy",
+                "resourceType": "GMFolder"
             }
         },
         {
@@ -164,6 +172,14 @@
                 "id": "7f0e635c-4e74-440d-a7c9-f483cc810f9d",
                 "resourcePath": "sounds\\mMenuMusic\\mMenuMusic.yy",
                 "resourceType": "GMSound"
+            }
+        },
+        {
+            "Key": "3e439c8a-5724-4c90-995e-9df07d0e94d9",
+            "Value": {
+                "id": "384058b5-dc6e-414a-9fa6-abde98fe78f0",
+                "resourcePath": "views\\3e439c8a-5724-4c90-995e-9df07d0e94d9.yy",
+                "resourceType": "GMFolder"
             }
         },
         {
@@ -276,6 +292,14 @@
                 "id": "aa6995dd-3458-4aa2-aa26-ad12ebd84dcc",
                 "resourcePath": "objects\\oBackgroundController\\oBackgroundController.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "60b273f4-ab69-4b06-b7dc-252c67d88cbc",
+            "Value": {
+                "id": "a949c33d-71a7-4631-b4b8-59a11cf2a1be",
+                "resourcePath": "views\\60b273f4-ab69-4b06-b7dc-252c67d88cbc.yy",
+                "resourceType": "GMFolder"
             }
         },
         {
@@ -543,11 +567,27 @@
             }
         },
         {
+            "Key": "c230eefa-e4d4-407f-8af9-6f6166c8e0d3",
+            "Value": {
+                "id": "b697a178-cda4-4ee8-b5c8-f898d3cf5f7d",
+                "resourcePath": "scripts\\InitPolygonVars\\InitPolygonVars.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "c5b564d5-d56f-4afc-8892-f222d74fc5c6",
             "Value": {
                 "id": "2398205d-9858-41f1-8aa9-e4ef8c01fed8",
                 "resourcePath": "objects\\oPolygonTest\\oPolygonTest.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "c6b6902b-c0a5-431a-807c-e0ddbe19dd25",
+            "Value": {
+                "id": "dba85e76-17f7-468f-adb0-16276efe52f2",
+                "resourcePath": "sprites\\sprPlayerMask\\sprPlayerMask.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -564,6 +604,14 @@
                 "id": "ebe8b2cb-2f08-45c8-a5c4-136bf31a866d",
                 "resourcePath": "sprites\\sprite2\\sprite2.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "c9c232f8-f240-4db8-8cc4-1de32191cd65",
+            "Value": {
+                "id": "aebfea08-285e-47b4-8ad4-97fe16b5afc9",
+                "resourcePath": "objects\\oParPolygon\\oParPolygon.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -673,7 +721,6 @@
     ],
     "script_order": [
         "31e8fbf3-7715-4018-a826-14e73ce76030",
-        "9ac06701-9158-4811-bcbb-f6fe86f24a62",
         "e3fbb68a-042c-476e-bf74-623f1fc81468",
         "66fb8d16-11b0-46aa-9cac-da9c977cfabd",
         "7a09f151-eda0-45f6-8b47-f535735448d2",
@@ -684,7 +731,9 @@
         "30bbc31b-a623-4781-88f8-f726f27c826f",
         "f0bd3691-6752-418e-ac59-66434cef3b71",
         "9c49e088-5e28-48b6-af16-6c61eaf54429",
-        "b8bff2f8-7865-4d5b-af9b-10f646cdee86"
+        "b8bff2f8-7865-4d5b-af9b-10f646cdee86",
+        "9ac06701-9158-4811-bcbb-f6fe86f24a62",
+        "c230eefa-e4d4-407f-8af9-6f6166c8e0d3"
     ],
     "tutorial": ""
 }
