@@ -6,7 +6,7 @@ move_dir[1] = keyboard_check_pressed(ord("L")) || keyboard_check_pressed(vk_righ
 move_dir[2] = keyboard_check_pressed(ord("I")) || keyboard_check_pressed(vk_up);
 move_dir[3] = keyboard_check_pressed(ord("K")) || keyboard_check_pressed(vk_down);
 
-//MOVE LEFT
+#region Movement
 if (!moving){
 	
 	#region Move Left
@@ -146,19 +146,8 @@ if (!moving){
 	//}
 	
 }
+#endregion
 
-//if (moving){
-
-//	if (move_dir[RC_key.right]){
-		
-//	}
-//	if (move_dir[RC_key.up]){
-//		target_y = (y - y_limit < 0) ? y : y - y_movement;
-//	}
-//	if (move_dir[RC_key.down]){
-//		target_y = (y + y_limit > room_height) ? y : y + y_movement; 
-//	}
-//}
 
 x = lerp(x, target_x, 0.5);
 y = lerp(y, target_y, 0.5);
@@ -175,4 +164,12 @@ if (scale != 0.4) {
 
 if (rot != 0) {
 	rot = lerp(rot, 0, 0.05);
+}
+
+if (player_scale != 1) {
+	player_scale = lerp(player_scale, 1, 0.1);
+}
+
+if (rotation != 45) {
+	rotation = lerp(rotation, 45, 0.1);
 }

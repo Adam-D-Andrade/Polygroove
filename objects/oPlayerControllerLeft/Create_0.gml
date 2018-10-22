@@ -25,3 +25,9 @@ enum LC_key {
 rot = 0;
 scale = 0.4;
 current_lives = global.PlayerLives;
+
+trail_init();
+
+//Player Drawing Variables
+player_scale = 1;
+InitPolygonVars(4, 27, 27, 45);

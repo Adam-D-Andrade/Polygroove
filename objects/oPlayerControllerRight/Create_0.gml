@@ -21,8 +21,15 @@ enum RC_key {
 	down
 }
 
- 
+
 //Life Drawing Variables
 rot = 0;
 scale = 0.4;
 current_lives = global.PlayerLives;
+
+trail_init();
+
+//Player Drawing Variables
+player_scale = 1;
+rotation = 45;
+InitPolygonVars(4, 27, 27, rotation);

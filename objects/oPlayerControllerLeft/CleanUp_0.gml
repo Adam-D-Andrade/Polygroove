@@ -1,0 +1,2 @@
+/// @description
+trail_destroy();
