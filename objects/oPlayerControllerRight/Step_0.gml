@@ -16,23 +16,27 @@ if (!moving){
 	
 		if (global.accuracy[r.perfect]) {
 			target_x = (x - x_limit < room_width/2) ? x : x - x_movement;
+			global.accuracy_counter[r.perfect] += 1;
 			with (instance_create_layer(oCenterPoint.x, oCenterPoint.y, "Instances", oText)){
 				text = "Perfect!";
 			}
 		}
 		else if global.accuracy[r.great] {
 			target_x = (x - x_limit < room_width/2) ? x : x - x_movement;
+			global.accuracy_counter[r.great] += 1;
 			with (instance_create_layer(oCenterPoint.x, oCenterPoint.y, "Instances", oText)){
 				text = "Great!";
 			}
 		}
 		else if global.accuracy[r.good]{
 			target_x = (x - x_limit < room_width/2) ? x : x - x_movement;
+			global.accuracy_counter[r.good] += 1;
 			with (instance_create_layer(oCenterPoint.x, oCenterPoint.y, "Instances", oText)){
 				text = "Good!";
 			}
 		}
 		else {
+			global.accuracy_counter[r.bad] += 1;
 			with (instance_create_layer(oCenterPoint.x, oCenterPoint.y, "Instances", oText)){
 				text = "Bad!";
 			}			
@@ -46,6 +50,7 @@ if (!moving){
 		moving = true;
 	
 		if (global.accuracy[r.perfect]) {
+			global.accuracy_counter[r.perfect] += 1;
 			target_x = (x + x_limit > room_width) ? x : x + x_movement;
 			moving = true;
 			with (instance_create_layer(oCenterPoint.x, oCenterPoint.y, "Instances", oText)){
@@ -53,6 +58,7 @@ if (!moving){
 			}
 		}
 		else if global.accuracy[r.great] {
+			global.accuracy_counter[r.great] += 1;
 			target_x = (x + x_limit > room_width) ? x : x + x_movement;
 			moving = true;
 			with (instance_create_layer(oCenterPoint.x, oCenterPoint.y, "Instances", oText)){
@@ -60,6 +66,7 @@ if (!moving){
 			}
 		}
 		else if global.accuracy[r.good]{
+			global.accuracy_counter[r.good] += 1;
 			target_x = (x + x_limit > room_width) ? x : x + x_movement;
 			moving = true;
 			with (instance_create_layer(oCenterPoint.x, oCenterPoint.y, "Instances", oText)){
@@ -67,6 +74,7 @@ if (!moving){
 			}
 		}
 		else {
+			global.accuracy_counter[r.bad] += 1;
 			with (instance_create_layer(oCenterPoint.x, oCenterPoint.y, "Instances", oText)){
 				text = "Bad!";
 			}			
@@ -80,24 +88,28 @@ if (!moving){
 		moving = true;
 	
 		if (global.accuracy[r.perfect]) {
+			global.accuracy_counter[r.perfect] += 1;
 			target_y = (y - y_limit < 0) ? y : y - y_movement;
 			with (instance_create_layer(oCenterPoint.x, oCenterPoint.y, "Instances", oText)){
 				text = "Perfect!";
 			}
 		}
 		else if global.accuracy[r.great] {
+			global.accuracy_counter[r.great] += 1;
 			target_y = (y - y_limit < 0) ? y : y - y_movement;
 			with (instance_create_layer(oCenterPoint.x, oCenterPoint.y, "Instances", oText)){
 				text = "Great!";
 			}
 		}
 		else if global.accuracy[r.good]{
+			global.accuracy_counter[r.good] += 1;
 			target_y = (y - y_limit < 0) ? y : y - y_movement;
 			with (instance_create_layer(oCenterPoint.x, oCenterPoint.y, "Instances", oText)){
 				text = "Good!";
 			}
 		}
 		else {
+			global.accuracy_counter[r.bad] += 1;
 			with (instance_create_layer(oCenterPoint.x, oCenterPoint.y, "Instances", oText)){
 				text = "Bad!";
 			}
@@ -110,24 +122,28 @@ if (!moving){
 		moving = true;
 	
 		if (global.accuracy[r.perfect]) {
+			global.accuracy_counter[r.perfect] += 1;
 			target_y = (y + y_limit > room_height) ? y : y + y_movement; 
 			with (instance_create_layer(oCenterPoint.x, oCenterPoint.y, "Instances", oText)){
 				text = "Perfect!";
 			}
 		}
 		else if global.accuracy[r.great] {
+			global.accuracy_counter[r.great] += 1;
 			target_y = (y + y_limit > room_height) ? y : y + y_movement; 
 			with (instance_create_layer(oCenterPoint.x, oCenterPoint.y, "Instances", oText)){
 				text = "Great!";
 			}
 		}
 		else if global.accuracy[r.good]{
+			global.accuracy_counter[r.good] += 1;
 			target_y = (y + y_limit > room_height) ? y : y + y_movement;
 			with (instance_create_layer(oCenterPoint.x, oCenterPoint.y, "Instances", oText)){
 				text = "Good!";
 			}
 		}
 		else {
+			global.accuracy_counter[r.bad] += 1;
 			target_y = y;
 			with (instance_create_layer(oCenterPoint.x, oCenterPoint.y, "Instances", oText)){
 				text = "Bad!";
