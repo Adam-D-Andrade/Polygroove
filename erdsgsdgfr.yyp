@@ -223,14 +223,6 @@
             }
         },
         {
-            "Key": "493db245-041f-43b0-9790-6856d1ad85b3",
-            "Value": {
-                "id": "dc59e0ec-c47d-4b89-a408-718ac01fa2c0",
-                "resourcePath": "sprites\\spr_zigzag\\spr_zigzag.yy",
-                "resourceType": "GMSprite"
-            }
-        },
-        {
             "Key": "49a7c112-7302-491b-ab42-7e9b6a1c9588",
             "Value": {
                 "id": "dbc32805-5327-4872-9e17-bdeb6551f610",
