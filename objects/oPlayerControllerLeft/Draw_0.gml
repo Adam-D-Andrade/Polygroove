@@ -1,6 +1,6 @@
 /// @description
 
-draw_trail_ext(27, global.colorGreen, -1, false, 1);
+draw_trail_ext(27, global.colorGreen, -1, false, 0.5);
 DrawPolygon(x,y, points, radius*player_scale, rotation, thickness*player_scale, global.colorGreen);
 
 

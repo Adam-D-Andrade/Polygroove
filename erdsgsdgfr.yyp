@@ -751,6 +751,14 @@
             }
         },
         {
+            "Key": "ef2b46b2-941a-490e-9897-cee6511c6830",
+            "Value": {
+                "id": "f76c58f7-c853-44da-98d8-6732dbf4e746",
+                "resourcePath": "objects\\oLevelLoader\\oLevelLoader.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "f0bd3691-6752-418e-ac59-66434cef3b71",
             "Value": {
                 "id": "99034143-705e-4cb4-a64f-d464af517df0",
@@ -788,6 +796,14 @@
                 "id": "84678252-3b14-4d20-a521-665b195e9112",
                 "resourcePath": "objects\\oMusic\\oMusic.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "fd489d60-83de-4f16-9763-70875822f4f2",
+            "Value": {
+                "id": "adfc04cf-8f1c-4fa0-b835-6083a4cb3ae5",
+                "resourcePath": "datafiles_yy\\LevelEditorTest.csv.yy",
+                "resourceType": "GMIncludedFile"
             }
         },
         {

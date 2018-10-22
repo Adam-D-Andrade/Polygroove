@@ -48,14 +48,14 @@ if (global.target_value >= -0.05) and (global.target_value <= 0.05){
 		
 		with(oPlayerControllerLeft){
 			rot = choose(-359, 359);
-			rotation = choose(-359, 0, 359);
+			rotation = choose(-359, 359);
 			scale = 0.8;
 			player_scale = 1.4;
 		}
 		
 		with(oPlayerControllerRight){
 			rot = choose(-359, 359);
-			rotation = choose(-359, 0, 359);
+			rotation = choose(-359, 359);
 			scale = 0.8;
 			player_scale = 1.4;
 		}

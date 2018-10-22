@@ -31,7 +31,6 @@ xRight[4] = half_w + right_offset + 64*4;
 xRight[5] = half_w + right_offset + 64*5;
 
 
-
 if instance_exists(oCenterPoint){
 	distance_to_input_buffer = oCenterPoint.y - y;
 }
