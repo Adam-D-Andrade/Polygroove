@@ -40,6 +40,9 @@ if (!moving){
 	#endregion
 	#region Moving Right
 	else if (move_dir[LC_key.right]){
+		
+		moving = true;
+		
 		if (global.accuracy[r.perfect]) {
 			target_x =( x + x_limit > room_width/2) ? x : x + x_movement;
 			with (instance_create_layer(oCenterPoint.x, oCenterPoint.y, "Instances", oText)){
@@ -68,6 +71,9 @@ if (!moving){
 	#endregion
 	#region Moving Up
 	else if (move_dir[LC_key.up]){
+		
+		moving = true;
+		
 		if (global.accuracy[r.perfect]) {
 			target_y = (y - y_limit < 0) ? y : y - y_movement;
 			with (instance_create_layer(oCenterPoint.x, oCenterPoint.y, "Instances", oText)){
@@ -96,6 +102,9 @@ if (!moving){
 	#endregion
 	#region Moving Down 
 	else if (move_dir[LC_key.down]){
+		
+		moving = true;
+		
 		if (global.accuracy[r.perfect]) {
 			target_y = (y + y_limit > room_height) ? y :  y + y_movement;
 			with (instance_create_layer(oCenterPoint.x, oCenterPoint.y, "Instances", oText)){
@@ -154,4 +163,12 @@ if (scale != 0.4) {
 
 if (rot != 0) {
 	rot = lerp(rot, 0, 0.05);//Approach(rot, 0, 2);
+}
+
+if (player_scale != 1) {
+	player_scale = lerp(player_scale, 1, 0.1);
+}
+
+if (rotation != 45) {
+	rotation = lerp(rotation, 45, 0.1);
 }

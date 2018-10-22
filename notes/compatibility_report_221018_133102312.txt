@@ -1,0 +1,26 @@
+Resource name collision 'draw_trail' already exists, renamed to 'draw_trail_scripts'
+Converting GML script: ${project_dir}\scripts\draw_trail_scripts\draw_trail_scripts.gml
+Converted description /// @description draw_trail(length,width,color,sprite,slim,alpha)/// @param length
+/// @param width
+/// @param color
+/// @param sprite
+/// @param slim
+/// @param alpha
+
+Converting GML script: ${project_dir}\scripts\trail_init\trail_init.gml
+Converted description /// @description trail_init()
+
+Converting GML script: ${project_dir}\scripts\draw_trail_ext\draw_trail_ext.gml
+Converted description /// @description draw_trail_ext(Width,Color,Sprite,Slim,Alpha)/// @param Width
+/// @param Color
+/// @param Sprite
+/// @param Slim
+/// @param Alpha
+
+Converting GML script: ${project_dir}\scripts\trail_calculate\trail_calculate.gml
+Converted description /// @description trail_calculate(length)/// @param length
+
+Converting GML script: ${project_dir}\scripts\trail_destroy\trail_destroy.gml
+Converted description /// @description trail_destroy()
+
+Added compatibility script 'texture/texture_set_repeat.gml'
