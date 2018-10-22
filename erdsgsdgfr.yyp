@@ -399,6 +399,14 @@
             }
         },
         {
+            "Key": "77f223f3-0180-47b3-8957-f64bc3dbefeb",
+            "Value": {
+                "id": "9f39424b-7bd7-47e7-acb1-f38b6a10f950",
+                "resourcePath": "fonts\\fntScoresGrade\\fntScoresGrade.yy",
+                "resourceType": "GMFont"
+            }
+        },
+        {
             "Key": "7a09f151-eda0-45f6-8b47-f535735448d2",
             "Value": {
                 "id": "7098c63e-7b6d-47d0-b1f1-ec26141f6efe",
@@ -532,6 +540,14 @@
                 "id": "475654ab-2ba3-4320-88a2-0c9b45ac5a86",
                 "resourcePath": "options\\amazonfire\\options_amazonfire.yy",
                 "resourceType": "GMAmazonFireOptions"
+            }
+        },
+        {
+            "Key": "a392c42e-7e01-42cd-aec3-17eeb8c2232d",
+            "Value": {
+                "id": "49e37e3c-d0db-4229-ae4f-c82e5106edaa",
+                "resourcePath": "fonts\\fntScores\\fntScores.yy",
+                "resourceType": "GMFont"
             }
         },
         {
@@ -700,6 +716,14 @@
                 "id": "c67887d8-c534-47c4-9430-32e889015dae",
                 "resourcePath": "scripts\\draw_trail_ext\\draw_trail_ext.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "dc37372a-a6eb-4679-849c-58449cc7e685",
+            "Value": {
+                "id": "8917042d-9e90-4c63-a22a-1094ed0361b4",
+                "resourcePath": "sounds\\mDebugTrack_130bpm\\mDebugTrack_130bpm.yy",
+                "resourceType": "GMSound"
             }
         },
         {
