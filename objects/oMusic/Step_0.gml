@@ -41,31 +41,71 @@ if (global.target_value >= -0.05) and (global.target_value <= 0.05){
 			
 					//loop through the grid in the csv file and check for values
 					for (var xx = 0; xx < level_grid_width; xx++){
-				
-						//if the value is 1 we need to spawn an enemy
-						if (LevelGrid[# xx, yy] == "1"){
 						
-							//On create, give initial effects
-							with instance_create_layer(x,-32, "Instances", oParEnemy) {
+						switch LevelGrid[# xx, yy]{
+							case "1":
+								//On create, give initial effects
+								with instance_create_layer(x,-32, "Instances", oParEnemy) {
 				
-								//ds_grid_value_x()
-								x = enemyGrid[xx];
-								rotation = 359;
-								scale = 2;
-								target_y = y + 64;
+									//ds_grid_value_x()
+									x = enemyGrid[xx];
+									rotation = 359;
+									scale = 2;
+									target_y = y + 64;
 			
-							}
+								}
+							break;
+							case "2":
+								with instance_create_layer(x,-32, "Instances", oWanderRandom) {
+									
+
+									//ds_grid_value_x()
+									x = enemyGrid[xx];									
+									scale = 2;
+									target_y = y + 64;
+								
+								}
+							break;
+							case "3":
+								with instance_create_layer(x,-32, "Instances", oEnemyFollower) {
 							
+									//ds_grid_value_x()
+									x = enemyGrid[xx];
+									rotation = 359;
+									scale = 2;
+									target_y = y + 64;
+							
+								}
+							break;
+							case "4":
+							break;
+							default:
 						}
-						else with instance_create_layer(x,-32, "Instances", oEnemyFollower) {
+						//if the value is 1 we need to spawn an enemy
+						//if (LevelGrid[# xx, yy] == "1"){
+						
+						//	//On create, give initial effects
+						//	with instance_create_layer(x,-32, "Instances", oParEnemy) {
+							
+						//		//ds_grid_value_x()
+						//		x = enemyGrid[xx];
+						//		rotation = 359;
+						//		scale = 2;
+						//		target_y = y + 64;
+							
+						//	}
+							
+						//}
+						
+						//else with instance_create_layer(x,-32, "Instances", oEnemyFollower) {
 				
-							//ds_grid_value_x()
-							x = enemyGrid[xx];
-							rotation = 359;
-							scale = 2;
-							target_y = y + 64;
+						//	//ds_grid_value_x()
+						//	x = enemyGrid[xx];
+						//	rotation = 359;
+						//	scale = 2;
+						//	target_y = y + 64;
 			
-						}
+						//}
 					}
 				}
 			}
@@ -85,6 +125,12 @@ if (global.target_value >= -0.05) and (global.target_value <= 0.05){
 				move = true;
 				rotation = choose(-359,359);
 				scale = 2;
+			}
+			
+			with (oWanderRandom) {
+				targetDir = changeDir ? choose(dir + 90, dir- 90) : dir;
+				move = changeDir ? false : true;
+				changeDir = !changeDir;
 			}
 		}
 		
