@@ -4,8 +4,7 @@ part_system_depth(global.particleSystem,0);
 
 
 
-// Losing a life (green squares)
-
+//I don't think this used?
 global.ptClearEnemies = part_type_create();
 part_type_shape(global.ptClearEnemies,pt_shape_square);
 part_type_size(global.ptClearEnemies,0.10,0.20,0,0);
@@ -19,13 +18,15 @@ part_type_orientation(global.ptClearEnemies,0,0,0,0,1);
 part_type_blend(global.ptClearEnemies,0);
 part_type_life(global.ptClearEnemies,30,60);
 
+
+// Losing a life (green squares)
 global.ptLoseLife = part_type_create();
 part_type_shape(global.ptLoseLife,pt_shape_square);
 part_type_size(global.ptLoseLife,0.10,0.20,0,0);
 part_type_scale(global.ptLoseLife,1,1);
 part_type_color1(global.ptLoseLife,4050544);
 part_type_alpha2(global.ptLoseLife,1,0);
-part_type_speed(global.ptLoseLife,0.70,1,0,0.50);
+part_type_speed(global.ptLoseLife,1.5,6,0,0.50);
 part_type_direction(global.ptLoseLife,0,180,0,0);
 part_type_gravity(global.ptLoseLife,0.10,270);
 part_type_orientation(global.ptLoseLife,0,0,0,0,1);
@@ -120,7 +121,7 @@ part_type_orientation(global.ptStarDots,0,0,0,0,0);
 part_type_blend(global.ptStarDots,1);
 part_type_life(global.ptStarDots,52,69);
 
-
+//Spark-like effect when triangle enemies die
 global.ptEnemyDestroy = part_type_create();
 part_type_shape(global.ptEnemyDestroy,pt_shape_sphere);
 part_type_size(global.ptEnemyDestroy,0.41,0.51,0,0);

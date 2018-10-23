@@ -159,6 +159,14 @@
             }
         },
         {
+            "Key": "353a1a9f-17c5-49b7-bdde-dc3e39c90e0a",
+            "Value": {
+                "id": "1cc462fc-fc5e-4000-98c5-2fcfda3e68a0",
+                "resourcePath": "objects\\oEnemyFollower\\oEnemyFollower.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "366b3dbf-dc83-4140-a73a-cbac19763862",
             "Value": {
                 "id": "2e1d8b4c-5fd2-49bb-a5cc-e7cb62c521a2",
@@ -367,6 +375,14 @@
             }
         },
         {
+            "Key": "6654adf8-0cbe-4f4a-8e75-2b20d301de33",
+            "Value": {
+                "id": "b278072f-dc06-40b5-b6f3-49ff118b5ade",
+                "resourcePath": "scripts\\InitAudioTable\\InitAudioTable.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "66fb8d16-11b0-46aa-9cac-da9c977cfabd",
             "Value": {
                 "id": "56058f55-04e8-4643-bae6-4562a496e4f5",
@@ -503,6 +519,14 @@
             }
         },
         {
+            "Key": "97b094d1-7e86-48e9-8dda-9cacea715f30",
+            "Value": {
+                "id": "6d4b6dad-7e58-48dc-ab8a-5979a74d157a",
+                "resourcePath": "objects\\oWanderRandom\\oWanderRandom.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "9913dee5-8bf0-4beb-8f92-06fbefc36b84",
             "Value": {
                 "id": "1da2f663-306a-44fd-8b5b-2bd89f1511ff",
@@ -548,6 +572,14 @@
                 "id": "49e37e3c-d0db-4229-ae4f-c82e5106edaa",
                 "resourcePath": "fonts\\fntScores\\fntScores.yy",
                 "resourceType": "GMFont"
+            }
+        },
+        {
+            "Key": "a4f68c66-f4ae-4478-9f49-a5d5d307b203",
+            "Value": {
+                "id": "36ff0977-eda5-4a82-a751-497ed6a7c9cf",
+                "resourcePath": "views\\a4f68c66-f4ae-4478-9f49-a5d5d307b203.yy",
+                "resourceType": "GMFolder"
             }
         },
         {
@@ -767,6 +799,14 @@
             }
         },
         {
+            "Key": "e4408ccd-c9ae-445b-8437-8595833aa14f",
+            "Value": {
+                "id": "2b5775a0-4295-4fd4-b537-8300aec9046d",
+                "resourcePath": "datafiles_yy\\Level_1.csv.yy",
+                "resourceType": "GMIncludedFile"
+            }
+        },
+        {
             "Key": "e57dee71-ccf5-43ca-a2b5-cb9d4b391de5",
             "Value": {
                 "id": "96a917bd-d938-49d1-b6ff-fd28b6d1cd66",
@@ -780,14 +820,6 @@
                 "id": "806e55c0-cd10-41c7-ba96-900e9f6ddd84",
                 "resourcePath": "scripts\\trail_destroy\\trail_destroy.yy",
                 "resourceType": "GMScript"
-            }
-        },
-        {
-            "Key": "ef2b46b2-941a-490e-9897-cee6511c6830",
-            "Value": {
-                "id": "f76c58f7-c853-44da-98d8-6732dbf4e746",
-                "resourcePath": "objects\\oLevelLoader\\oLevelLoader.yy",
-                "resourceType": "GMObject"
             }
         },
         {
@@ -834,7 +866,7 @@
             "Key": "fd489d60-83de-4f16-9763-70875822f4f2",
             "Value": {
                 "id": "adfc04cf-8f1c-4fa0-b835-6083a4cb3ae5",
-                "resourcePath": "datafiles_yy\\LevelEditorTest.csv.yy",
+                "resourcePath": "datafiles_yy\\Level_0.csv.yy",
                 "resourceType": "GMIncludedFile"
             }
         },
@@ -867,7 +899,8 @@
         "da7006b4-6da6-42a3-b134-8c7c7bc4103d",
         "87f6e4a7-35ce-4d41-914c-60a6812bb099",
         "e630dd10-6433-4138-9e8e-f02b93230bff",
-        "b33e75e4-4262-4642-b29f-88f68ef90931"
+        "b33e75e4-4262-4642-b29f-88f68ef90931",
+        "6654adf8-0cbe-4f4a-8e75-2b20d301de33"
     ],
     "tutorial": ""
 }

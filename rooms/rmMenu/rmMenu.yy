@@ -12,8 +12,7 @@
         "00a2bb26-df95-493f-9a00-a09eadb381f5",
         "e60cea69-b627-405e-9376-6e9cc323db87",
         "29f19d9b-7b64-419f-af2b-e13b278e896e",
-        "c8bc1752-a18c-4221-bc7f-07e33458767b",
-        "3d397768-b4ff-4938-a555-b625c6f2faff"
+        "c8bc1752-a18c-4221-bc7f-07e33458767b"
     ],
     "IsDnD": false,
     "layers": [
@@ -61,8 +60,7 @@
             "inheritVisibility": false,
             "instances": [
 {"name": "inst_9CA90D1","id": "ee8a2cd6-2e63-4568-a9b5-77243b6887dd","colour": { "Value": 4294967295 },"creationCodeFile": "","creationCodeType": "","ignore": false,"inheritCode": false,"inheritItemSettings": false,"IsDnD": false,"m_originalParentID": "00000000-0000-0000-0000-000000000000","m_serialiseFrozen": false,"modelName": "GMRInstance","name_with_no_file_rename": "inst_9CA90D1","objId": "85f67b4f-f3da-4c6e-b4f6-c3714eb41c3b","properties": null,"rotation": 0,"scaleX": 1,"scaleY": 1,"mvc": "1.0","x": -64,"y": 416},
-{"name": "inst_11138AF8","id": "b8af4225-843d-43d4-861d-51d76272095a","colour": { "Value": 4294967295 },"creationCodeFile": "","creationCodeType": "","ignore": false,"inheritCode": false,"inheritItemSettings": false,"IsDnD": false,"m_originalParentID": "00000000-0000-0000-0000-000000000000","m_serialiseFrozen": false,"modelName": "GMRInstance","name_with_no_file_rename": "inst_11138AF8","objId": "5fdeecbd-c9c2-42aa-b082-41a901b7b58d","properties": null,"rotation": 0,"scaleX": 1,"scaleY": 1,"mvc": "1.0","x": -96,"y": 224},
-{"name": "inst_28FD0B33","id": "3d397768-b4ff-4938-a555-b625c6f2faff","colour": { "Value": 4294967295 },"creationCodeFile": "","creationCodeType": "","ignore": false,"inheritCode": false,"inheritItemSettings": false,"IsDnD": false,"m_originalParentID": "00000000-0000-0000-0000-000000000000","m_serialiseFrozen": false,"modelName": "GMRInstance","name_with_no_file_rename": "inst_28FD0B33","objId": "ef2b46b2-941a-490e-9897-cee6511c6830","properties": null,"rotation": 0,"scaleX": 1,"scaleY": 1,"mvc": "1.0","x": 384,"y": 416}
+{"name": "inst_11138AF8","id": "b8af4225-843d-43d4-861d-51d76272095a","colour": { "Value": 4294967295 },"creationCodeFile": "","creationCodeType": "","ignore": false,"inheritCode": false,"inheritItemSettings": false,"IsDnD": false,"m_originalParentID": "00000000-0000-0000-0000-000000000000","m_serialiseFrozen": false,"modelName": "GMRInstance","name_with_no_file_rename": "inst_11138AF8","objId": "5fdeecbd-c9c2-42aa-b082-41a901b7b58d","properties": null,"rotation": 0,"scaleX": 1,"scaleY": 1,"mvc": "1.0","x": -96,"y": 224}
             ],
             "layers": [
 
