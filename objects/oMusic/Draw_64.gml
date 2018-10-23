@@ -35,4 +35,4 @@ draw_text(20,40, "percent_complete_track = " + string(percent_complete_track));
 draw_text(20,50, "normalized_max_beats = " + string(normalized_max_beats));
 draw_text(20,60, "normalized_current_beats = " + string(normalized_current_beats));
 draw_text(20,70, "current_bar_progress = " + string(current_bar_progress));
-
+draw_set_color(c_white);
