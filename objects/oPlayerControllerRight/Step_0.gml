@@ -7,7 +7,7 @@ move_dir[2] = keyboard_check_pressed(ord("I")) || keyboard_check_pressed(vk_up);
 move_dir[3] = keyboard_check_pressed(ord("K")) || keyboard_check_pressed(vk_down);
 
 #region Movement
-if (!moving){
+if (!moving and global.songPlaying){
 	
 	#region Move Left
 	if (move_dir[LC_key.left]){
