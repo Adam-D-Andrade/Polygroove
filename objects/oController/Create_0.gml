@@ -6,6 +6,9 @@ global.level_counter = 0;
 // This should only be true while a song/level is active
 global.songPlaying = true;
 
+// Should be the same as oMusic.max_beats_on_track - updated in step event
+last_max_beats_on_track = 0;
+
 enum audiotable{
 	track,
 	bpm,

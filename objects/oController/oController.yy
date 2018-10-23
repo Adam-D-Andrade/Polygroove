@@ -5,16 +5,6 @@
     "name": "oController",
     "eventList": [
         {
-            "id": "b1c33f24-26ba-4cf3-bcbe-de1d31cd4e6b",
-            "modelName": "GMEvent",
-            "mvc": "1.0",
-            "IsDnD": false,
-            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
-            "enumb": 0,
-            "eventtype": 8,
-            "m_owner": "6236f0d9-ce80-4da9-9923-b351200f44ae"
-        },
-        {
             "id": "88fb344d-f33e-497a-b48e-83f2d40e6062",
             "modelName": "GMEvent",
             "mvc": "1.0",

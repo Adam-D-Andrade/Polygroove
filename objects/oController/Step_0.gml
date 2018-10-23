@@ -12,6 +12,10 @@ if keyboard_check_pressed(vk_space) && (global.level_counter == 0){
 	}
 }
 
+if (instance_exists(oMusic)){
+	last_max_beats_on_track = oMusic.max_beats_on_track;
+}
+
 
 if (next_level) {
 	global.songPlaying = false;
