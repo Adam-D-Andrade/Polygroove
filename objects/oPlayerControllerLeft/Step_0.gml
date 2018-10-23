@@ -6,7 +6,7 @@ move_dir[2] = keyboard_check_pressed(ord("W"));
 move_dir[3] = keyboard_check_pressed(ord("S"));
 shooting = keyboard_check_pressed(vk_space);
 
-if (!moving){
+if ((!moving) and global.songPlaying){
 	#region Moving Left
 	if (move_dir[LC_key.left]){
 		

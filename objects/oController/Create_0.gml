@@ -3,6 +3,9 @@ global.custom_debug_mode = false;
 
 global.level_counter = 0;
 
+// This should only be true while a song/level is active
+global.songPlaying = true;
+
 enum audiotable{
 	track,
 	bpm,
@@ -69,10 +72,10 @@ enum r {
 
 //Initialize the array
 global.accuracy = [];
-global.accuracy[r.bad] = 0;
-global.accuracy[r.good] = 0;
-global.accuracy[r.great] = 0;
-global.accuracy[r.perfect] = 0;
+global.accuracy[r.bad] = false;
+global.accuracy[r.good] = false;
+global.accuracy[r.great] = false;
+global.accuracy[r.perfect] = false;
 
 global.accuracy_counter = [];
 global.accuracy_counter[r.bad] = 0;

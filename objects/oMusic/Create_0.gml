@@ -10,7 +10,6 @@ end_beat			= oController.audio_table[# audiotable.barEnd, global.level_counter] 
 
 global.beatsPerMinute = beats_per_min;
 global.beatsPerSecond = 60/beats_per_min;
-
 global.target_value = 0;
 
 start_time = 0;

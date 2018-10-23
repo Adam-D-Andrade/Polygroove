@@ -14,6 +14,8 @@ if keyboard_check_pressed(vk_space) && (global.level_counter == 0){
 
 
 if (next_level) {
+	global.songPlaying = false;
+	
 	// Move to next level when user presses spacebar
 	if keyboard_check_pressed(vk_space) {
 		
@@ -30,6 +32,7 @@ if (next_level) {
 		// Create new oMusic
 		if !instance_exists(oMusic) {
 			instance_create_layer(x,y, "Instances", oMusic);
+			global.songPlaying = true;
 		}
 	}
 }
