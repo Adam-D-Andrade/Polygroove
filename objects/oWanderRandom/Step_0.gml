@@ -2,6 +2,8 @@
 
 event_inherited();
 
+dir = 
+
 if (dir != targetDir) {
 	dir = lerp(dir, targetDir, 0.1);
 }

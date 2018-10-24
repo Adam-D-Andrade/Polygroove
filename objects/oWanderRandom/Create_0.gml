@@ -7,3 +7,4 @@ target_x = 0;
 target_y = 0;
 dir = 270;
 InitPolygonVars(3, 20,20, dir);
+InitPolygonVars(3, 10,10, dir);
