@@ -6,7 +6,7 @@ action_on_beat = false;
 
 growing = false;
 grow_count = 0;
-grow_rate = 0.5;
+grow_rate = 1;
 max_grow_count = 8;
 
 new_scale = 2;

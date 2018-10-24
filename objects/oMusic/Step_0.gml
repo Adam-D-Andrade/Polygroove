@@ -70,7 +70,7 @@ if (global.target_value >= -0.05) and (global.target_value <= 0.05){
 							case "4":
 								with instance_create_layer(oController.enemyGrid[xx], -32, "Instances", oShooter){
 									scale = 2;
-									y = y + 64;
+									y = y + 100;
 									action_on_beat = !action_on_beat;
 								}
 							break;
@@ -149,7 +149,7 @@ if (global.target_value >= -0.05) and (global.target_value <= 0.05){
 			with (oShooter){
 				action_on_beat = !action_on_beat;
 				rotation = choose(-359,359);
-				scale = new_scale;
+				//scale = new_scale;
 			}
 		}
 		
@@ -183,20 +183,13 @@ if (total_beats >= end_beat){
 	instance_destroy(oParEnemy);
 }
 
-//max_beats_on_track, could probably move this code to the cleanup event
+//max_beats_on_track, go to next level, further processing done on cleanup event
 if (total_beats >= max_beats_on_track) {
-	total_beats = 0;
+	
 	global.level_counter++;
-	
 	oController.next_level = true;
-	audio_group_unload(audio_group_music);
-	
-	if ds_exists(ds_type_grid, LevelGrid) {
-		ds_grid_destroy(LevelGrid);
-	}
 	
 	instance_destroy();
-	
 }
 
 #endregion

@@ -1,20 +1,14 @@
 /// @description
 
-
-
-
-
-
 if (action_on_beat){
 	
 	action_on_beat = !action_on_beat;
 	
-	
-	if shoot { 
+	if (shoot) { 
 		shoot = !shoot; 
 		grow_count = 0;
-		new_scale = 2;
 		growing = !growing;
+		new_scale = 2;
 	}
 	
 	//if we aren't growing, choose to see if we are
@@ -32,10 +26,11 @@ if (action_on_beat){
 		}
 	}		
 	else { 
-		if (grow_count <= max_grow_count){
-			//scale = new_scale;
+		if (grow_count < max_grow_count){
+			
 			grow_count++;
 			new_scale += grow_rate;
+			scale = new_scale;
 		}
 		else {
 			shoot = true;

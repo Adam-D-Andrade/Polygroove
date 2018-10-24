@@ -239,14 +239,6 @@
             }
         },
         {
-            "Key": "49a7c112-7302-491b-ab42-7e9b6a1c9588",
-            "Value": {
-                "id": "dbc32805-5327-4872-9e17-bdeb6551f610",
-                "resourcePath": "objects\\oTimer\\oTimer.yy",
-                "resourceType": "GMObject"
-            }
-        },
-        {
             "Key": "4d4c4cb2-efb9-44f6-890f-5020a6c8e078",
             "Value": {
                 "id": "63786deb-c04f-4c33-b99a-db0257829c9e",
@@ -647,6 +639,14 @@
             }
         },
         {
+            "Key": "a96f4a2b-d944-4394-8249-379ee57655e4",
+            "Value": {
+                "id": "77f3d334-c6d8-415f-995e-a09277a83c72",
+                "resourcePath": "scripts\\LoseLife\\LoseLife.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "ac258783-f602-43d5-b48f-e1a73f58bc8d",
             "Value": {
                 "id": "5de107b7-c3fa-4f9e-8070-1ee6db523c63",
@@ -711,14 +711,6 @@
             }
         },
         {
-            "Key": "c5b564d5-d56f-4afc-8892-f222d74fc5c6",
-            "Value": {
-                "id": "2398205d-9858-41f1-8aa9-e4ef8c01fed8",
-                "resourcePath": "objects\\oPolygonTest\\oPolygonTest.yy",
-                "resourceType": "GMObject"
-            }
-        },
-        {
             "Key": "c6b6902b-c0a5-431a-807c-e0ddbe19dd25",
             "Value": {
                 "id": "dba85e76-17f7-468f-adb0-16276efe52f2",
@@ -772,6 +764,14 @@
                 "id": "0c63b440-ed36-451c-bc0f-b0946e6aef47",
                 "resourcePath": "sprites\\sprPlayer\\sprPlayer.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "d24e6906-412b-4557-a17b-708a4802ae69",
+            "Value": {
+                "id": "5e22f895-8f41-4723-a350-93d9d99d32a6",
+                "resourcePath": "objects\\oParPlayerController\\oParPlayerController.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -934,7 +934,8 @@
         "b33e75e4-4262-4642-b29f-88f68ef90931",
         "6654adf8-0cbe-4f4a-8e75-2b20d301de33",
         "ca6e85f9-4e3c-4ff8-8451-fea222ede959",
-        "4d4c4cb2-efb9-44f6-890f-5020a6c8e078"
+        "4d4c4cb2-efb9-44f6-890f-5020a6c8e078",
+        "a96f4a2b-d944-4394-8249-379ee57655e4"
     ],
     "tutorial": ""
 }

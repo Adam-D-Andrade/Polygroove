@@ -27,6 +27,9 @@ rot = 0;
 scale = 0.4;
 current_lives = global.PlayerLives;
 
+lives_x_pos = 0;
+lives_y_pos = 0;
+
 trail_init();
 
 //Player Drawing Variables
