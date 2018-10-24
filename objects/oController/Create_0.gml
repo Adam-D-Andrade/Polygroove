@@ -25,6 +25,16 @@ enum level {
 	four
 }
 
+//Enum for refencing the enemies
+enum enemy {
+	none,//0
+	basic,
+	wander,
+	follower,
+	shooter
+	
+}
+
 InitAudioTable();
 
 next_level = false;
@@ -74,3 +84,6 @@ if !instance_exists(oPlayerControllerRight) {
 if !instance_exists(oCenterPoint) {
 	instance_create_layer(centre_x, centre_y + 200, "Instances", oCenterPoint); 
 }
+
+InitEnemyPosGrid();
+

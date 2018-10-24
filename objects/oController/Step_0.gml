@@ -4,6 +4,10 @@
 //Calculate Delta Time
 global.seconds_passed = delta_time/1000000;
 
+if keyboard_check_pressed(ord("M")){
+	audio_set_master_gain(0,0);
+	show_question("fuck");
+}
 
 if keyboard_check_pressed(vk_space) && (global.level_counter == 0){
 	if !instance_exists(oMusic){

@@ -3,8 +3,13 @@
 event_inherited();
 
 changeDir = false;
-target_x = 0;
-target_y = 0;
+
 dir = 270;
+targetDir = dir;
 InitPolygonVars(3, 20,20, dir);
-InitPolygonVars(3, 10,10, dir);
+
+grid_pos = GetGridPosition();
+
+
+
+target_y = y;

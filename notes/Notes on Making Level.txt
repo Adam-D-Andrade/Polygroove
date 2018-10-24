@@ -1,0 +1,6 @@
+Currently all the levels are using numbers for coding, but I think we might need to use letters for 
+better variability.
+
+
+
+

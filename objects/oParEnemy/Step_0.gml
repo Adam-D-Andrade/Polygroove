@@ -13,8 +13,8 @@ if (rotation != 0) {
 	rotation = lerp(rotation, 0, 0.05);
 }
 
-if (move == true) {
-	move = false;
+if (move) {
+	move = !move;
 	target_y = y + 64;
 }
 

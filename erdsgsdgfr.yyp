@@ -31,6 +31,14 @@
     },
     "resources": [
         {
+            "Key": "03e24c98-8dca-4e0b-ba36-ce6a2ac19fc3",
+            "Value": {
+                "id": "0733d69c-f1fa-4266-b990-249c38015f54",
+                "resourcePath": "datafiles_yy\\Level_1.csv.yy",
+                "resourceType": "GMIncludedFile"
+            }
+        },
+        {
             "Key": "041ab27d-fd47-40fe-a20d-145be49c826d",
             "Value": {
                 "id": "ab3e90fd-83ad-41c9-9ec4-aa761591f6b2",
@@ -239,11 +247,11 @@
             }
         },
         {
-            "Key": "4c900650-a16e-4653-9b4c-4561b1b320ba",
+            "Key": "4d4c4cb2-efb9-44f6-890f-5020a6c8e078",
             "Value": {
-                "id": "c41c8107-9e1b-4791-9c99-99fafa2bfac9",
-                "resourcePath": "notes\\compatibility_report_221018_133102312.yy",
-                "resourceType": "GMNotes"
+                "id": "63786deb-c04f-4c33-b99a-db0257829c9e",
+                "resourcePath": "scripts\\GetGridPosition\\GetGridPosition.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -388,6 +396,14 @@
                 "id": "56058f55-04e8-4643-bae6-4562a496e4f5",
                 "resourcePath": "scripts\\insert_separator_commas\\insert_separator_commas.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "6ef4af62-dd78-452c-b37c-1d0222247854",
+            "Value": {
+                "id": "d8bd8d96-170f-45f4-b844-a380aa308cfc",
+                "resourcePath": "objects\\oShooter\\oShooter.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -559,6 +575,14 @@
             }
         },
         {
+            "Key": "9fe406d9-7fea-4b07-ad16-3e4470009dd6",
+            "Value": {
+                "id": "fbd30fb4-e475-49ee-94ce-0731ded8eecc",
+                "resourcePath": "notes\\Notes on Making Level.yy",
+                "resourceType": "GMNotes"
+            }
+        },
+        {
             "Key": "a128950b-5063-4876-b4a6-b99dbd2ea6d1",
             "Value": {
                 "id": "475654ab-2ba3-4320-88a2-0c9b45ac5a86",
@@ -727,6 +751,14 @@
             }
         },
         {
+            "Key": "ca6e85f9-4e3c-4ff8-8451-fea222ede959",
+            "Value": {
+                "id": "d14544d2-7ff9-4772-a355-4593e4fcc84b",
+                "resourcePath": "scripts\\InitEnemyPosGrid\\InitEnemyPosGrid.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "cc98d028-7bdd-4680-85f3-c87a7baa481e",
             "Value": {
                 "id": "fbc4a0b3-7e24-48a9-9d39-86710be5a134",
@@ -802,7 +834,7 @@
             "Key": "e4408ccd-c9ae-445b-8437-8595833aa14f",
             "Value": {
                 "id": "2b5775a0-4295-4fd4-b537-8300aec9046d",
-                "resourcePath": "datafiles_yy\\Level_1.csv.yy",
+                "resourcePath": "datafiles_yy\\Level_2.csv.yy",
                 "resourceType": "GMIncludedFile"
             }
         },
@@ -900,7 +932,9 @@
         "87f6e4a7-35ce-4d41-914c-60a6812bb099",
         "e630dd10-6433-4138-9e8e-f02b93230bff",
         "b33e75e4-4262-4642-b29f-88f68ef90931",
-        "6654adf8-0cbe-4f4a-8e75-2b20d301de33"
+        "6654adf8-0cbe-4f4a-8e75-2b20d301de33",
+        "ca6e85f9-4e3c-4ff8-8451-fea222ede959",
+        "4d4c4cb2-efb9-44f6-890f-5020a6c8e078"
     ],
     "tutorial": ""
 }

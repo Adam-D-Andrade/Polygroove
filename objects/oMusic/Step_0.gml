@@ -43,69 +43,39 @@ if (global.target_value >= -0.05) and (global.target_value <= 0.05){
 					for (var xx = 0; xx < level_grid_width; xx++){
 						
 						switch LevelGrid[# xx, yy]{
-							case "1":
+							case string(enemy.basic):
 								//On create, give initial effects
-								with instance_create_layer(x,-32, "Instances", oParEnemy) {
-				
+								with instance_create_layer(oController.enemyGrid[xx],-32, "Instances", oParEnemy) {
 									//ds_grid_value_x()
-									x = enemyGrid[xx];
 									rotation = 359;
 									scale = 2;
-									target_y = y + 64;
-			
+									target_y = y + 64;			
 								}
 							break;
 							case "2":
-								with instance_create_layer(x,-32, "Instances", oWanderRandom) {
-									
-
-									//ds_grid_value_x()
-									x = enemyGrid[xx];									
+								with instance_create_layer(oController.enemyGrid[xx],-32, "Instances", oWanderRandom) {
+									//ds_grid_value_x()								
 									scale = 2;
-									target_y = y + 64;
-								
+									target_y = y + 64;								
 								}
 							break;
 							case "3":
-								with instance_create_layer(x,-32, "Instances", oEnemyFollower) {
-							
-									//ds_grid_value_x()
-									x = enemyGrid[xx];
+								with instance_create_layer(oController.enemyGrid[xx],-32, "Instances", oEnemyFollower) {	
+									//ds_grid_value_x()	
 									rotation = 359;
 									scale = 2;
 									target_y = y + 64;
-							
 								}
 							break;
 							case "4":
+								with instance_create_layer(oController.enemyGrid[xx], -32, "Instances", oShooter){
+									scale = 2;
+									y = y + 64;
+									action_on_beat = !action_on_beat;
+								}
 							break;
 							default:
 						}
-						//if the value is 1 we need to spawn an enemy
-						//if (LevelGrid[# xx, yy] == "1"){
-						
-						//	//On create, give initial effects
-						//	with instance_create_layer(x,-32, "Instances", oParEnemy) {
-							
-						//		//ds_grid_value_x()
-						//		x = enemyGrid[xx];
-						//		rotation = 359;
-						//		scale = 2;
-						//		target_y = y + 64;
-							
-						//	}
-							
-						//}
-						
-						//else with instance_create_layer(x,-32, "Instances", oEnemyFollower) {
-				
-						//	//ds_grid_value_x()
-						//	x = enemyGrid[xx];
-						//	rotation = 359;
-						//	scale = 2;
-						//	target_y = y + 64;
-			
-						//}
 					}
 				}
 			}
@@ -113,7 +83,7 @@ if (global.target_value >= -0.05) and (global.target_value <= 0.05){
 			else {
 				with instance_create_layer(x,-32, "Instances", oParEnemy) {		
 					//ds_grid_value_x()
-					x = enemyGrid[irandom_range(0,11)];
+					x = oController.enemyGrid[irandom_range(0,11)];
 					rotation = 359;
 					scale = 2;
 					target_y = y + 64;
@@ -127,10 +97,59 @@ if (global.target_value >= -0.05) and (global.target_value <= 0.05){
 				scale = 2;
 			}
 			
+			//This gave me a headache and I don't want to chnage it for atleast a week
+			#region WanderRandom logic
 			with (oWanderRandom) {
-				targetDir = changeDir ? choose(dir + 90, dir- 90) : dir;
-				move = changeDir ? false : true;
+				if (dir != targetDir) dir = targetDir;
+				if (x != oController.enemyGrid[grid_pos]) x = oController.enemyGrid[grid_pos];
+				
+				//Could maybe optimize this mess? maybe? I don't fucking know.
+				if (changeDir) {
+					if (targetDir mod 270 == 0){
+						if (grid_pos == 0 || grid_pos == 6 ){
+							targetDir = choose(targetDir, targetDir + 90);
+						}
+						else if (grid_pos == 5 || grid_pos == 11){
+							targetDir = choose(targetDir, targetDir - 90);
+						}
+						else {
+							targetDir = choose(dir + 90, dir - 90);
+						}
+					}
+					else {
+						targetDir = 270;
+					}
+				}
+				
+				if (!changeDir){
+					switch (dir mod 360) {
+						case 0: 
+							grid_pos += 1;
+							target_y = y;
+						break;
+						case 90: //this should never happen but in case it does
+							target_x = x;
+							target_y = y - 64;							
+						break;
+						case 180:
+							grid_pos -= 1;
+							target_y = y;
+						break;
+						case 270:
+							target_x = x;
+							target_y = y + 64;
+						break;
+					}
+				}
+				
 				changeDir = !changeDir;
+			}
+			#endregion
+			
+			with (oShooter){
+				action_on_beat = !action_on_beat;
+				rotation = choose(-359,359);
+				scale = new_scale;
 			}
 		}
 		

@@ -1,24 +1,20 @@
 /// @description
 
-event_inherited();
 
-dir = 
+
+//targetDir = targetDir mod 360;
+//dir = abs(dir mod 360);
 
 if (dir != targetDir) {
-	dir = lerp(dir, targetDir, 0.1);
+	dir = lerp(dir, targetDir, 0.2);
 }
 
-//if (move) {
-//	move = !move;
-//	switch dir {
-//		case 0: 
-//			target_x = x + 
-//		break;
-//		case 90:
-//		break;
-//		case 180:
-//		break;
-//		case 270:
-//		break;
-//	}
-//}
+if (scale != 1) {
+	scale = lerp(scale, 1, 0.1);
+}
+
+
+y = lerp(y, target_y, 0.1);
+x = lerp(x, oController.enemyGrid[grid_pos], 0.1);
+
+
