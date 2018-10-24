@@ -12,7 +12,8 @@ if next_level{
 										);
 	
 	draw_set_font(fntScoresGrade);
-	draw_text(center_width-300,center_height - 90, "Grade: " + level_grade);
+	draw_text(center_width-300,center_height - 90, "Grade: " + level_grade[0]);
+	draw_text(center_width-300,center_height - 140, "Points: " + string(level_grade[1]));
 	
 	
 	draw_set_font(fntScores);
