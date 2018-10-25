@@ -26,6 +26,7 @@ if (!moving && global.songPlaying){
 				
 					with(instance_create_layer(oCenterPoint.x, oCenterPoint.y, "Instances", oText)){
 						text = id.rating[rating];
+						direction = 135;
 					}
 					rating_on_input = rating; 
 					break;

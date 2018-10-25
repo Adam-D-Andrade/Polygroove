@@ -1,12 +1,13 @@
 /// @description
 
-alarm[0] = 30;
+alarm[0] = 40;
 
-direction = choose(45, 135);
-speed = irandom_range(4, 8);
-gravity = 0.3;
+direction = 0;
+speed = 6;
+
 
 text = "";
+
 rating[r.bad] = "Bad";
 rating[r.good] = "Good";
 rating[r.great] = "Great";
