@@ -31,6 +31,14 @@
     },
     "resources": [
         {
+            "Key": "01f04dba-a14f-4efc-be4b-6fce4408cb11",
+            "Value": {
+                "id": "bb64852f-eb2a-476f-9a3a-0f60d89d0f85",
+                "resourcePath": "sounds\\sCharging\\sCharging.yy",
+                "resourceType": "GMSound"
+            }
+        },
+        {
             "Key": "03e24c98-8dca-4e0b-ba36-ce6a2ac19fc3",
             "Value": {
                 "id": "0733d69c-f1fa-4266-b990-249c38015f54",
@@ -247,6 +255,14 @@
             }
         },
         {
+            "Key": "48aed3f0-61b5-4b71-8f00-c000a055987b",
+            "Value": {
+                "id": "bab6f69f-1936-4b6f-9a76-9a572797fc2d",
+                "resourcePath": "sounds\\sLaserBeam\\sLaserBeam.yy",
+                "resourceType": "GMSound"
+            }
+        },
+        {
             "Key": "48fe51cd-722d-45a4-8dd9-19525105701c",
             "Value": {
                 "id": "680e7057-01e8-471f-b860-a0460e564261",
@@ -379,6 +395,14 @@
             "Value": {
                 "id": "34e76182-d81e-414f-992d-0c67cf7d8ec5",
                 "resourcePath": "sounds\\mTrack2_130bpm\\mTrack2_130bpm.yy",
+                "resourceType": "GMSound"
+            }
+        },
+        {
+            "Key": "64bace37-8799-4a20-ad2b-aba3e2a2a547",
+            "Value": {
+                "id": "25ebc78d-429d-416a-9671-89cabf4a7f03",
+                "resourcePath": "sounds\\sDamage1\\sDamage1.yy",
                 "resourceType": "GMSound"
             }
         },

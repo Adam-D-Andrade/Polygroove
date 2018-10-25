@@ -14,11 +14,11 @@ var n_good			= argument3;
 var n_bad			= argument4;
 
 perfect_value = 1000;
-great_value = 900;
+great_value = 950;
 good_value = 800;
-bad_value = -5;
+bad_value = -10;
 
-maximum_score = perfect_value * (max_beats*2);
+maximum_score = perfect_value * max_beats;
 perfect_score = perfect_value * n_perfect;
 great_score = great_value * n_great;
 good_score = good_value * n_good;
