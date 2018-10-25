@@ -127,6 +127,14 @@
             }
         },
         {
+            "Key": "23146a47-b622-4846-8db7-96d95ba9fe05",
+            "Value": {
+                "id": "f4fc4909-56da-485d-9ed1-f67223c095d0",
+                "resourcePath": "views\\23146a47-b622-4846-8db7-96d95ba9fe05.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
             "Key": "2ad572d1-d0bb-4f5f-80df-d370af5e8211",
             "Value": {
                 "id": "acb0addc-da71-4fda-a5d1-17ef7e982d07",
@@ -215,6 +223,14 @@
             }
         },
         {
+            "Key": "3f3d32ce-ba93-49db-b359-faace64c5c4c",
+            "Value": {
+                "id": "0037b9de-ee0a-4a53-9d25-aa8f74ae1fd0",
+                "resourcePath": "views\\3f3d32ce-ba93-49db-b359-faace64c5c4c.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
             "Key": "40220e9f-df4b-43a6-95e9-9581c3d5aaca",
             "Value": {
                 "id": "519c5136-e98f-4819-b6e4-654f9f8cb27d",
@@ -244,6 +260,14 @@
                 "id": "63786deb-c04f-4c33-b99a-db0257829c9e",
                 "resourcePath": "scripts\\GetGridPosition\\GetGridPosition.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "4d884006-88e8-4b2c-957f-c6315ab187f1",
+            "Value": {
+                "id": "0910dfde-1c5d-4280-b987-c273edfdb813",
+                "resourcePath": "objects\\oOptionsMenu\\oOptionsMenu.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -527,6 +551,14 @@
             }
         },
         {
+            "Key": "943cfbe2-b277-41d0-8895-9c37834e1d10",
+            "Value": {
+                "id": "b0e6e456-22a8-4243-a399-949b9f605bad",
+                "resourcePath": "rooms\\rmOptions\\rmOptions.yy",
+                "resourceType": "GMRoom"
+            }
+        },
+        {
             "Key": "97b094d1-7e86-48e9-8dda-9cacea715f30",
             "Value": {
                 "id": "6d4b6dad-7e58-48dc-ab8a-5979a74d157a",
@@ -711,6 +743,14 @@
             }
         },
         {
+            "Key": "c385fe6d-5101-4e24-bace-7f05636afedd",
+            "Value": {
+                "id": "63ee2f05-c652-485a-bbf6-b12822c1f16a",
+                "resourcePath": "objects\\oMenuMusicPlayer\\oMenuMusicPlayer.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "c6b6902b-c0a5-431a-807c-e0ddbe19dd25",
             "Value": {
                 "id": "dba85e76-17f7-468f-adb0-16276efe52f2",
@@ -847,6 +887,14 @@
             }
         },
         {
+            "Key": "e5d34fc8-4d85-4177-90d5-b6bbc6066ca5",
+            "Value": {
+                "id": "f5c394ad-9935-4cfb-ae8e-759d59b7ac7c",
+                "resourcePath": "scripts\\call_options_menu\\call_options_menu.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "e630dd10-6433-4138-9e8e-f02b93230bff",
             "Value": {
                 "id": "806e55c0-cd10-41c7-ba96-900e9f6ddd84",
@@ -923,7 +971,6 @@
         "30bbc31b-a623-4781-88f8-f726f27c826f",
         "f0bd3691-6752-418e-ac59-66434cef3b71",
         "9c49e088-5e28-48b6-af16-6c61eaf54429",
-        "b8bff2f8-7865-4d5b-af9b-10f646cdee86",
         "9ac06701-9158-4811-bcbb-f6fe86f24a62",
         "c230eefa-e4d4-407f-8af9-6f6166c8e0d3",
         "184e381d-d5e8-4ff3-998c-489b3188def9",
@@ -935,7 +982,9 @@
         "6654adf8-0cbe-4f4a-8e75-2b20d301de33",
         "ca6e85f9-4e3c-4ff8-8451-fea222ede959",
         "4d4c4cb2-efb9-44f6-890f-5020a6c8e078",
-        "a96f4a2b-d944-4394-8249-379ee57655e4"
+        "a96f4a2b-d944-4394-8249-379ee57655e4",
+        "e5d34fc8-4d85-4177-90d5-b6bbc6066ca5",
+        "b8bff2f8-7865-4d5b-af9b-10f646cdee86"
     ],
     "tutorial": ""
 }

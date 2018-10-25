@@ -33,6 +33,4 @@ text[r.perfect] = "Perfect";
 //Control the spawning of instances using the bpm, current system will spawn about 3 every time
 bpmTrigger = true;
 
-
 level_track = "";
-

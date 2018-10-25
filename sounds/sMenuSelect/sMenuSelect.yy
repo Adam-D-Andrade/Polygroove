@@ -3,7 +3,7 @@
     "modelName": "GMSound",
     "mvc": "1.0",
     "name": "sMenuSelect",
-    "audioGroupGuid": "7b2c4976-1e09-44e5-8256-c527145e03bb",
+    "audioGroupGuid": "dcbeb153-a4d9-415d-8ea1-13f6809aa83d",
     "bitDepth": 1,
     "bitRate": 128,
     "kind": 0,

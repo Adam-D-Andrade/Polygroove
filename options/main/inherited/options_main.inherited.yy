@@ -38,6 +38,36 @@
                     "groupName": "audio_group_master",
                     "targets": 461609314234257646
                 }
+            },
+            {
+                "Key": 4,
+                "Value": {
+                    "id": "1880a1ce-98e9-4d42-848b-f5dfcabbf9c3",
+                    "modelName": "GMAudioGroup",
+                    "mvc": "1.0",
+                    "groupName": "audio_group_trash",
+                    "targets": 461609314234257646
+                }
+            },
+            {
+                "Key": 5,
+                "Value": {
+                    "id": "6e19c063-9fac-41e0-ba17-35db941aedbb",
+                    "modelName": "GMAudioGroup",
+                    "mvc": "1.0",
+                    "groupName": "audio_group_menu_music",
+                    "targets": 461609314234257646
+                }
+            },
+            {
+                "Key": 6,
+                "Value": {
+                    "id": "dcbeb153-a4d9-415d-8ea1-13f6809aa83d",
+                    "modelName": "GMAudioGroup",
+                    "mvc": "1.0",
+                    "groupName": "audio_group_menu_sfx",
+                    "targets": 461609314234257646
+                }
             }
         ],
         "Checksum": "濑Ⱥ朦씁ᬄ縈",
