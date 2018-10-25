@@ -1,5 +1,5 @@
-/// @description InitPolygonVars(points, radius, thickness, rotation)
-/// @function DrawPolygon
+/// @description init_polygon_vars(points, radius, thickness, rotation)
+/// @function draw_polygon
 /// @param points
 /// @param radius
 /// @param thickness

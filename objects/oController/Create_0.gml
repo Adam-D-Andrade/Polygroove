@@ -4,7 +4,7 @@ global.custom_debug_mode = false;
 global.level_counter = 0;
 
 // This should only be true while a song/level is active
-global.songPlaying = true;
+global.songPlaying = false;
 
 // Should be the same as oMusic.max_beats_on_track - updated in step event
 last_max_beats_on_track = 0;
@@ -35,9 +35,12 @@ enum enemy {
 	
 }
 
-InitAudioTable();
+init_audio_table();
+
+init_xpos_grid();
 
 next_level = false;
+fail_screen = false;
 
 //enum to get values from array on how close we were!
 enum r {
@@ -63,8 +66,8 @@ global.accuracy_counter[r.perfect] = 0;
 var rm_height = room_height;
 var rm_width = room_width;
 
-var grid_length = rm_width div GRID_SIZE;
-var grid_height = rm_height div GRID_SIZE;
+//var grid_length = rm_width div GRID_SIZE;
+//var grid_height = rm_height div GRID_SIZE;
 
 //Not sure if we need a full on grid data structure as everything can't be snapped to this due to delta time
 //level_grid = ds_grid_create()
@@ -76,14 +79,14 @@ var centre_y = rm_height/2;
 global.PlayerLives = 5;
 
 if !instance_exists(oPlayerControllerLeft) {
-	instance_create_layer(centre_x-100, centre_y, "Instances", oPlayerControllerLeft)
+	instance_create_layer(x_grid[3], centre_y, "Instances", oPlayerControllerLeft)
 }
 if !instance_exists(oPlayerControllerRight) {
-	instance_create_layer(centre_x+100, centre_y, "Instances", oPlayerControllerRight)
+	instance_create_layer(x_grid[8], centre_y, "Instances", oPlayerControllerRight)
 }
 if !instance_exists(oCenterPoint) {
 	instance_create_layer(centre_x, centre_y + 200, "Instances", oCenterPoint); 
 }
 
-InitEnemyPosGrid();
+
 

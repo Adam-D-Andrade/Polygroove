@@ -15,6 +15,6 @@ if (scale != 1) {
 
 
 y = lerp(y, target_y, 0.1);
-x = lerp(x, oController.enemyGrid[grid_pos], 0.1);
+x = lerp(x, oController.x_grid[grid_pos], 0.1);
 
 

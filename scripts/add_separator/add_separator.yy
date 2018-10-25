@@ -1,8 +1,8 @@
 {
-    "id": "52d1dd83-92a6-4335-8872-e7671f6868a9",
+    "id": "80c92590-c8d3-4237-ac09-19d5fba489d7",
     "modelName": "GMScript",
     "mvc": "1.0",
-    "name": "SpringTo",
+    "name": "add_separator",
     "IsCompatibility": false,
     "IsDnD": false
 }

@@ -1,5 +1,5 @@
-/// @description DrawPolygon(x,y,points,rad, rot, thick, color)
-/// @function DrawPolygon
+/// @description draw_polygon(x,y,points,rad, rot, thick, color)
+/// @function draw_polygon
 /// @param x
 /// @param y
 /// @param points

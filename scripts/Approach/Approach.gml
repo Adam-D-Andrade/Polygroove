@@ -1,5 +1,5 @@
-/// @description Approach(start, end, shift);
-/// @function Approach
+/// @description approach(start, end, shift);
+/// @function approach
 /// @param start
 /// @param  end
 /// @param  shift

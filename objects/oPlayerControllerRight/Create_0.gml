@@ -3,7 +3,8 @@
 moving = false;
 flag = false;
 
-target_x = x;
+xgrid_pos = get_grid_position();
+target_x = oController.x_grid[xgrid_pos];
 target_y = y;
 
 
@@ -35,4 +36,4 @@ trail_init();
 //Player Drawing Variables
 player_scale = 1;
 rotation = 45;
-InitPolygonVars(4, 27, 27, rotation);
+init_polygon_vars(4, 27, 27, rotation);

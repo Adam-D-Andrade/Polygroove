@@ -8,7 +8,7 @@ move = false;
 
 //Setup Polygon Drawing 
 rotation = 0;
-InitPolygonVars(3, 20,10, rotation);
+init_polygon_vars(3, 20,10, rotation);
 scale = 1;
 //rotation = 0;
 

@@ -2,6 +2,7 @@
 
 if audio_group_is_loaded(audio_group_music)
 {
+	
 	if (global.level_counter == 0) audio_play_sound(mDebugTrack_130bpm, 100, false);
 	if (global.level_counter == 1) audio_play_sound(mTrack5_115bpm, 100, false);
 	if (global.level_counter == 2) audio_play_sound(mTrack1_130bpm, 100, false);

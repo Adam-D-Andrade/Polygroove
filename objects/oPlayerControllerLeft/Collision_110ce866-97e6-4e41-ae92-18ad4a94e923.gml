@@ -2,4 +2,4 @@
 
 with(other) instance_destroy();
 
-LoseLife(id);
+lose_life(id);

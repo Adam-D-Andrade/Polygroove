@@ -51,4 +51,4 @@ if (line_width != base_line_width) {
 	line_width = lerp(line_width, base_line_width, 0.1);
 }
 
-x = lerp(x, oController.enemyGrid[grid_pos], 0.1);
+x = lerp(x, oController.x_grid[grid_pos], 0.1);

@@ -1,7 +1,7 @@
 /// @description
 
 draw_trail_ext(27, global.colorGreen, -1, false, 0.5);
-DrawPolygon(x,y, points, radius*player_scale, rotation, thickness*player_scale, global.colorGreen);
+draw_polygon(x,y, points, radius*player_scale, rotation, thickness*player_scale, global.colorGreen);
 
 var half_width = sprite_width/2;
 var half_height = sprite_height/2;

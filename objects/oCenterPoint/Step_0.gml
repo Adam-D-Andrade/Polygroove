@@ -17,5 +17,4 @@ if (next_beat != noone) {
 	global.accuracy[r.good] = (dist <= distance_rating[r.good])
 	global.accuracy[r.great] =(dist < distance_rating[r.great])
 	global.accuracy[r.perfect] = (dist < distance_rating[r.perfect])
-	
 }

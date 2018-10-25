@@ -1,5 +1,5 @@
-/// @description Wave(from, to, duration, offset)
-/// @function Wave
+/// @description wave(from, to, duration, offset)
+/// @function wave
 /// @param from
 /// @param  to
 /// @param  duration(seconds)

@@ -13,6 +13,6 @@ if( global.custom_debug_mode){
 	draw_circle(x, y, distance_rating[r.perfect], true); // too small to see
 }
 
-DrawPolygon(x, y, points, radius*scale, rotation, thickness*scale, global.colorYellow); 
+draw_polygon(x, y, points, radius*scale, rotation, thickness*scale, global.colorYellow); 
 
 //draw_circle_color(x, y, radius, global.colorYellow, global.colorYellow, false);

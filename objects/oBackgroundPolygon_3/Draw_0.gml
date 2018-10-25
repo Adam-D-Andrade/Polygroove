@@ -4,6 +4,6 @@
 
 gpu_set_blendmode(bm_subtract);
 
-DrawPolygon(x,y,points,radius,rotation,thickness,global.colorBackgroundPurple);
+draw_polygon(x,y,points,radius,rotation,thickness,global.colorBackgroundPurple);
 
 gpu_set_blendmode(bm_normal);

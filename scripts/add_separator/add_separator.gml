@@ -1,4 +1,4 @@
-/// @function addSeparator(integer, separation, seperator);
+/// @function add_separator(integer, separation, seperator);
 /// @description Insert seperators in a number, from right to left, every separation spaces
 /// @param {real} The input value
 /// @param {real} Number of digits grouped between commas

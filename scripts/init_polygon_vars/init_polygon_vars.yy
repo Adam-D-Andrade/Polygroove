@@ -1,8 +1,8 @@
 {
-    "id": "6654adf8-0cbe-4f4a-8e75-2b20d301de33",
+    "id": "c230eefa-e4d4-407f-8af9-6f6166c8e0d3",
     "modelName": "GMScript",
     "mvc": "1.0",
-    "name": "InitAudioTable",
+    "name": "init_polygon_vars",
     "IsCompatibility": false,
     "IsDnD": false
 }

@@ -1,4 +1,4 @@
-/// @description InitSpringValues(springTension, springDampening, springSpeed)
+/// @description init_spring_values(springTension, springDampening, springSpeed)
 /// @arg springTension			  
 /// @arg springDampening 		  	
 /// @arg springSpeed		

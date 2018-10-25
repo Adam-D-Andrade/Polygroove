@@ -4,7 +4,26 @@
     "mvc": "1.0",
     "name": "oParPlayerController",
     "eventList": [
-        
+        {
+            "id": "8dcb6060-f9f3-4d90-9022-5877b318a2ea",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 0,
+            "eventtype": 0,
+            "m_owner": "d24e6906-412b-4557-a17b-708a4802ae69"
+        },
+        {
+            "id": "70733834-593f-4a17-abcf-a5d3f82ce97c",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 0,
+            "eventtype": 3,
+            "m_owner": "d24e6906-412b-4557-a17b-708a4802ae69"
+        }
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
     "overriddenProperties": null,

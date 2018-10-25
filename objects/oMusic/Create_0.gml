@@ -9,6 +9,7 @@ start_beat			= oController.audio_table[# audiotable.barStart, global.level_count
 end_beat			= oController.audio_table[# audiotable.barEnd, global.level_counter] * 4;
 
 yy = 0;
+
 level_name = "Level_" + string(global.level_counter) + ".csv";
 LevelGrid = load_csv(level_name);
 level_grid_width = ds_grid_width(LevelGrid);

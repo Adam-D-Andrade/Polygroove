@@ -1,4 +1,4 @@
-/// @description SpringTo(targetvalue, baseValue)
+/// @description spring_to(targetvalue, baseValue)
 /// @arg targetvalue
 /// @arg baseValue
 

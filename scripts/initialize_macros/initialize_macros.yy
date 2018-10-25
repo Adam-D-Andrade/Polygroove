@@ -1,8 +1,8 @@
 {
-    "id": "80c92590-c8d3-4237-ac09-19d5fba489d7",
+    "id": "f42c7117-7d81-4333-beb4-7e2320e52a7a",
     "modelName": "GMScript",
     "mvc": "1.0",
-    "name": "addSeparator",
+    "name": "initialize_macros",
     "IsCompatibility": false,
     "IsDnD": false
 }

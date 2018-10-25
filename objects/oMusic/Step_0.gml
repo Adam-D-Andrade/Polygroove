@@ -32,6 +32,7 @@ if (global.target_value >= -0.05) and (global.target_value <= 0.05){
 		
 		//Within the beats requiring palyer input
 		if (total_beats >= start_beat) && (total_beats <= end_beat){
+			global.songPlaying = true;
 			instance_create_layer(x, y, "Instances", oInputSignal);
 			
 			if ds_exists(LevelGrid, ds_type_grid){
@@ -45,30 +46,27 @@ if (global.target_value >= -0.05) and (global.target_value <= 0.05){
 						switch LevelGrid[# xx, yy]{
 							case string(enemy.basic):
 								//On create, give initial effects
-								with instance_create_layer(oController.enemyGrid[xx],-32, "Instances", oParEnemy) {
-									//ds_grid_value_x()
+								with instance_create_layer(oController.x_grid[xx],-32, "Instances", oParEnemy) {
 									rotation = 359;
 									scale = 2;
 									target_y = y + 64;			
 								}
 							break;
 							case "2":
-								with instance_create_layer(oController.enemyGrid[xx],-32, "Instances", oWanderRandom) {
-									//ds_grid_value_x()								
+								with instance_create_layer(oController.x_grid[xx],-32, "Instances", oWanderRandom) {							
 									scale = 2;
 									target_y = y + 64;								
 								}
 							break;
 							case "3":
-								with instance_create_layer(oController.enemyGrid[xx],-32, "Instances", oEnemyFollower) {	
-									//ds_grid_value_x()	
+								with instance_create_layer(oController.x_grid[xx],-32, "Instances", oEnemyFollower) {	
 									rotation = 359;
 									scale = 2;
 									target_y = y + 64;
 								}
 							break;
 							case "4":
-								with instance_create_layer(oController.enemyGrid[xx], -32, "Instances", oShooter){
+								with instance_create_layer(oController.x_grid[xx], -32, "Instances", oShooter){
 									scale = 2;
 									y = y + 100;
 									action_on_beat = !action_on_beat;
@@ -79,29 +77,30 @@ if (global.target_value >= -0.05) and (global.target_value <= 0.05){
 					}
 				}
 			}
-			//default to random placement if their is no grid or csv load error
+			// Default to random placement if there is no grid loaded or any csv load error
 			else {
 				with instance_create_layer(x,-32, "Instances", oParEnemy) {		
 					//ds_grid_value_x()
-					x = oController.enemyGrid[irandom_range(0,11)];
+					x = oController.x_grid[irandom_range(0,11)];
 					rotation = 359;
 					scale = 2;
 					target_y = y + 64;
 				}
 			}
 			
-			//On beat reapply effects
+			// On beat reapply effects
 			with (oParEnemy) {
 				move = true;
 				rotation = choose(-359,359);
 				scale = 2;
 			}
 			
-			//This gave me a headache and I don't want to chnage it for atleast a week
+			// WanderRandom Enemy currently moves down and turns either left or right, switching directions
+			// if at the end of the track for either side
 			#region WanderRandom logic
 			with (oWanderRandom) {
 				if (dir != targetDir) dir = targetDir;
-				if (x != oController.enemyGrid[grid_pos]) x = oController.enemyGrid[grid_pos];
+				if (x != oController.x_grid[grid_pos]) x = oController.x_grid[grid_pos];
 				
 				//Could maybe optimize this mess? maybe? I don't fucking know.
 				if (changeDir) {
@@ -180,7 +179,10 @@ if (global.target_value >= -0.05) and (global.target_value <= 0.05){
 
 //end_beat is the last beat of the song requiring player input
 if (total_beats >= end_beat){
-	instance_destroy(oParEnemy);
+	if instance_exists(oParEnemy){
+		instance_destroy(oParEnemy);
+	}
+	global.songPlaying = false;
 }
 
 //max_beats_on_track, go to next level, further processing done on cleanup event

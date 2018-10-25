@@ -1,8 +1,8 @@
 {
-    "id": "e3fbb68a-042c-476e-bf74-623f1fc81468",
+    "id": "6654adf8-0cbe-4f4a-8e75-2b20d301de33",
     "modelName": "GMScript",
     "mvc": "1.0",
-    "name": "InitSpringValues",
+    "name": "init_audio_table",
     "IsCompatibility": false,
     "IsDnD": false
 }
