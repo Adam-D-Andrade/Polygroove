@@ -13,7 +13,7 @@ global.target_value = time mod (global.beatsPerSecond);
 test = (current_time mod bpm)/bpm; //value from 0 461 --> divided by 461, value now 0 - 1
 
 #region Trigger on Beat Stuff
-if (global.target_value >= -0.05) and (global.target_value <= 0.05){
+if (global.target_value >= -0.04) and (global.target_value <= 0.04){
 	
 	//BPM trigger allows us to only trigger this once otherwise this will occur many times.
 	if (bpmTrigger){
@@ -24,7 +24,7 @@ if (global.target_value >= -0.05) and (global.target_value <= 0.05){
 		with(oCenterPoint) {
 			scale = 3; 
 			line_width = 40;
-			
+			part_particles_create(global.particleSystem, x, y, global.ptYellowLines,20);
 			//we should create some particle effect here on the beat
 			//Forest: placer the part_particles_create code here
 		}
@@ -96,7 +96,7 @@ if (global.target_value >= -0.05) and (global.target_value <= 0.05){
 			}
 			
 			// WanderRandom Enemy currently moves down and turns either left or right, switching directions
-			// if at the end of the track for either side
+			// if at the end of the grid for either side
 			#region WanderRandom logic
 			with (oWanderRandom) {
 				if (dir != targetDir) dir = targetDir;

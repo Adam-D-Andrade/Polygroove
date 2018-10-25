@@ -135,4 +135,18 @@ part_type_orientation(global.ptEnemyDestroy,0,0,0,0,1);
 part_type_blend(global.ptEnemyDestroy,1);
 part_type_life(global.ptEnemyDestroy,44,60);
 
+// Green Bars
+global.ptPerfectInputBars = part_type_create();
+part_type_shape(global.ptPerfectInputBars,pt_shape_line);
+part_type_size(global.ptPerfectInputBars,0.10,0.76,0,0);
+part_type_scale(global.ptPerfectInputBars,2.06,1);
+part_type_color3(global.ptPerfectInputBars,65280,65280,8454016);
+part_type_alpha3(global.ptPerfectInputBars,0.90,0.68,0.20);
+part_type_speed(global.ptPerfectInputBars,3.19,3.48,0,0);
+part_type_direction(global.ptPerfectInputBars,0,359,0,0);
+part_type_gravity(global.ptPerfectInputBars,0,270);
+part_type_orientation(global.ptPerfectInputBars,0,0,0,0,1);
+part_type_blend(global.ptPerfectInputBars,1);
+part_type_life(global.ptPerfectInputBars,38,56);
+
 

@@ -13,5 +13,7 @@ rating[r.good] = "Good";
 rating[r.great] = "Great";
 rating[r.perfect] = "Perfect";
 
-
-
+emit_particles = true;
+if (instance_exists(oCenterPoint) && (text = "Perfect")){
+	part_particles_create(global.particleSystem, oCenterPoint.x, oCenterPoint.y, global.ptPerfectInputBars, 50);
+}
