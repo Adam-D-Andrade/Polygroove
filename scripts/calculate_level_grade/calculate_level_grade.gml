@@ -25,7 +25,7 @@ good_score = good_value * n_good;
 bad_score = bad_value * n_bad;
 
 raw_score = perfect_score + great_score + good_score + bad_score
-normalized_score = (raw_score / maximum_score) * 100  // should be between 0-100 (though could be less than 0)
+normalized_score = round((raw_score / maximum_score) * 100)  // should be between 0-100 (though could be less than 0)
 
 if (normalized_score <= 49) {
 	grade =  "F"
