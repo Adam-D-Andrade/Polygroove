@@ -12,7 +12,7 @@ with (argument0){
 		instance_destroy();
 	}
 	// Play sound
-	audio_play_sound(sndDamage, 1, false);
+	audio_play_sound(sDamage1,1,false);
 
 	current_lives--;
 }

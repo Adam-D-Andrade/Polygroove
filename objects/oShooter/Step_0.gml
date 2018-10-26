@@ -27,7 +27,7 @@ if (action_on_beat){
 	}		
 	else { 
 		if (grow_count < max_grow_count){
-			
+			audio_play_sound(sCharging,1,false);
 			grow_count++;
 			new_scale += grow_rate;
 			scale = new_scale;
@@ -35,6 +35,9 @@ if (action_on_beat){
 		else {
 			shoot = true;
 			line_width *= 10;
+			if !audio_is_playing(sLaserBeam){
+				audio_play_sound(sLaserBeam,1,false);
+			}
 		}
 	}
 }
