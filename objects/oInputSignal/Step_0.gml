@@ -8,3 +8,5 @@ y += y_speed_this_frame;
 if ((y >= oCenterPoint.y) && (is_visible)){
 	is_visible = !is_visible;
 }
+
+part_particles_create(global.particleSystem, x,y, global.ptWhiteOrb, 5);

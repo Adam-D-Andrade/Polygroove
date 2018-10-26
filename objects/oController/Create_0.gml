@@ -1,4 +1,5 @@
 /// @description
+show_debug_overlay(true);
 global.custom_debug_mode = false;
 
 global.level_counter = 0;

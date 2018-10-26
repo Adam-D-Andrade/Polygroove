@@ -181,6 +181,20 @@ part_type_orientation(global.ptPlayerDeathSparks,0,0,0,0,1);
 part_type_blend(global.ptPlayerDeathSparks,1);
 part_type_life(global.ptPlayerDeathSparks,30,73);
 
+// Trying to make a good particle to make the yellow orb look better
+global.ptWhiteOrb = part_type_create();
+part_type_shape(global.ptWhiteOrb,pt_shape_sphere);
+part_type_size(global.ptWhiteOrb,0.74,0.94,-0.01,0);
+part_type_scale(global.ptWhiteOrb,1,1);
+part_type_color1(global.ptWhiteOrb,c_white);
+part_type_alpha3(global.ptWhiteOrb,0.82,0.31,0.08);
+part_type_speed(global.ptWhiteOrb,3,3,-0.05,0);
+part_type_direction(global.ptWhiteOrb,270,270,0,0);
+part_type_gravity(global.ptWhiteOrb,0,270);
+part_type_orientation(global.ptWhiteOrb,0,0,0,0,0);
+part_type_blend(global.ptWhiteOrb,1);
+part_type_life(global.ptWhiteOrb,10,20);
+
 
 global.ptCircleWave = part_type_create();
 part_type_shape(global.ptCircleWave,pt_shape_line);
