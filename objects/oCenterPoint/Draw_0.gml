@@ -5,7 +5,8 @@ var centre_y = room_height/2;
 
 
 draw_line_width(centre_x, 0, centre_x, y,line_width);
-	
+
+
 if( global.custom_debug_mode){
 	draw_circle(x, y, distance_rating[r.bad], true);
 	draw_circle(x, y, distance_rating[r.good], true);
