@@ -22,12 +22,26 @@ normalized_max_beats = progress_bar_real_width;
 normalized_current_beats = progress_bar_real_width * percent_complete_track;
 current_bar_progress = top_left_x + normalized_current_beats;
 
+
 // Slight tweaks to bar to make it fit nicer
-top_left_y_bar = top_left_y + 2; 
+top_left_y_bar = top_left_y + 1; 
 top_left_x_bar = top_left_x + 1;
-draw_rectangle(top_left_x_bar, top_left_y_bar, current_bar_progress, bottom_right_y, false);
+draw_rectangle(top_left_x_bar, top_left_y_bar, current_bar_progress, bottom_right_y-1, false);
 
 
+// Draw start of song
+normalized_bar_start = bar_start / max_bars_on_track
+normalized_bar_end = bar_end / max_bars_on_track
+progress_bar_half_height = (bottom_right_y - top_left_y)/2
+
+bar_start_progress = top_left_x + (progress_bar_real_width*normalized_bar_start);
+draw_set_color(global.colorYellow);
+draw_rectangle(bar_start_progress+2, top_left_y_bar, bar_start_progress, bottom_right_y-1, false);
+
+// Draw rest period of song
+draw_set_color(global.colorTeal);
+bar_end_progress = top_left_x + (progress_bar_real_width*normalized_bar_end)
+draw_rectangle(bar_end_progress, top_left_y_bar, bar_end_progress+2, bottom_right_y-1, false);
 
 if global.custom_debug_mode{
 	

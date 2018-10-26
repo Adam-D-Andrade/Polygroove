@@ -5,7 +5,10 @@ audio_group_load(audio_group_music);
 total_beats = 0;
 beats_per_min		= oController.audio_table[# audiotable.bpm, global.level_counter];
 max_beats_on_track	= oController.audio_table[# audiotable.bars, global.level_counter] * 4;
+max_bars_on_track	= oController.audio_table[# audiotable.bars, global.level_counter];
+bar_start			= oController.audio_table[# audiotable.barStart, global.level_counter];
 start_beat			= oController.audio_table[# audiotable.barStart, global.level_counter] * 4;
+bar_end				= oController.audio_table[# audiotable.barEnd, global.level_counter];
 end_beat			= oController.audio_table[# audiotable.barEnd, global.level_counter] * 4;
 
 yy = 0;
