@@ -52,7 +52,6 @@ if global.custom_debug_mode{
 	draw_set_color(c_white);
 	draw_text(text_x,text_y, string(percent_complete_track*100) + "%");
 
-
 	// Debug text
 	draw_set_font(fntDebug);
 	draw_text(20,20, "progress_bar_real_width = " + string(progress_bar_real_width));
