@@ -11,3 +11,4 @@ if instance_exists(oCenterPoint){
 
 dist = 0;
 
+is_visible = true;

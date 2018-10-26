@@ -18,3 +18,6 @@ if (next_beat != noone) {
 	global.accuracy[r.great] =(dist < distance_rating[r.great])
 	global.accuracy[r.perfect] = (dist < distance_rating[r.perfect])
 }
+
+part_type_scale(global.ptYellowOrb,scale,scale);
+part_particles_create(global.particleSystem, x,y, global.ptYellowOrb, 5);

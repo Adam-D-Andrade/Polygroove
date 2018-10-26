@@ -150,3 +150,69 @@ part_type_blend(global.ptPerfectInputBars,1);
 part_type_life(global.ptPerfectInputBars,38,56);
 
 
+
+#region Messing with some Particles
+
+// Trying to make a good particle to make the yellow orb look better
+global.ptYellowOrb = part_type_create();
+part_type_shape(global.ptYellowOrb,pt_shape_sphere);
+part_type_size(global.ptYellowOrb,0.74,0.94,0,0);
+part_type_scale(global.ptYellowOrb,1,1);
+part_type_color3(global.ptYellowOrb,6198261,739880,9036763);
+part_type_alpha3(global.ptYellowOrb,0.82,0.31,0.08);
+part_type_speed(global.ptYellowOrb,3,3,-0.05,0);
+part_type_direction(global.ptYellowOrb,0,359,0,0);
+part_type_gravity(global.ptYellowOrb,0,270);
+part_type_orientation(global.ptYellowOrb,0,0,0,0,0);
+part_type_blend(global.ptYellowOrb,1);
+part_type_life(global.ptYellowOrb,10,20);
+
+// More variety to Player Death
+global.ptPlayerDeathSparks = part_type_create();
+part_type_shape(global.ptPlayerDeathSparks,pt_shape_line);
+part_type_size(global.ptPlayerDeathSparks,0.10,0.10,0,0);
+part_type_scale(global.ptPlayerDeathSparks,2.39,2.23);
+part_type_color3(global.ptPlayerDeathSparks,65280,3052120,4941626);
+part_type_alpha3(global.ptPlayerDeathSparks,0.87,0.71,0.03);
+part_type_speed(global.ptPlayerDeathSparks,1,5.09,0,0);
+part_type_direction(global.ptPlayerDeathSparks,0,359,0,0);
+part_type_gravity(global.ptPlayerDeathSparks,0,270);
+part_type_orientation(global.ptPlayerDeathSparks,0,0,0,0,1);
+part_type_blend(global.ptPlayerDeathSparks,1);
+part_type_life(global.ptPlayerDeathSparks,30,73);
+
+
+global.ptCircleWave = part_type_create();
+part_type_shape(global.ptCircleWave,pt_shape_line);
+part_type_size(global.ptCircleWave,0.28,0.78,0,0);
+part_type_scale(global.ptCircleWave,0.57,3.45);
+part_type_color3(global.ptCircleWave,4722415,14480369,4615622);
+part_type_alpha3(global.ptCircleWave,0.82,0.73,0.07);
+part_type_speed(global.ptCircleWave,3.96,6.97,0,0);
+part_type_direction(global.ptCircleWave,0,359,0,0);
+part_type_gravity(global.ptCircleWave,0,270);
+part_type_orientation(global.ptCircleWave,0,0,0,0,1);
+part_type_blend(global.ptCircleWave,1);
+part_type_life(global.ptCircleWave,62,63);
+
+// some gay as dust 
+global.ptDust = part_type_create();
+part_type_shape(global.ptDust,pt_shape_flare);
+part_type_size(global.ptDust,0.10,0.30,0,0.10);
+part_type_scale(global.ptDust,1.86,2.03);
+part_type_color3(global.ptDust,5935474,11279915,14149911);
+part_type_alpha3(global.ptDust,0.54,0.46,0.09);
+part_type_speed(global.ptDust,3.24,6.65,-0.40,0.10);
+part_type_direction(global.ptDust,0,359,0,0);
+part_type_gravity(global.ptDust,0,270);
+part_type_orientation(global.ptDust,0,0,0,0,1);
+part_type_blend(global.ptDust,1);
+part_type_life(global.ptDust,33,64);
+
+
+
+
+
+
+#endregion
+
