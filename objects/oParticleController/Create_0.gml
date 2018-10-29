@@ -199,17 +199,17 @@ part_type_life(global.ptWhiteOrb,10,20);
 global.ptCircleWave = part_type_create();
 part_type_shape(global.ptCircleWave,pt_shape_line);
 part_type_size(global.ptCircleWave,0.28,0.78,0,0);
-part_type_scale(global.ptCircleWave,0.57,3.45);
+part_type_scale(global.ptCircleWave,0.57,2.5);
 part_type_color3(global.ptCircleWave,4722415,14480369,4615622);
 part_type_alpha3(global.ptCircleWave,0.82,0.73,0.07);
-part_type_speed(global.ptCircleWave,3.96,6.97,0,0);
+part_type_speed(global.ptCircleWave,2,3,0,0);
 part_type_direction(global.ptCircleWave,0,359,0,0);
 part_type_gravity(global.ptCircleWave,0,270);
 part_type_orientation(global.ptCircleWave,0,0,0,0,1);
 part_type_blend(global.ptCircleWave,1);
 part_type_life(global.ptCircleWave,62,63);
 
-// some gay as dust 
+// some silly dust 
 global.ptDust = part_type_create();
 part_type_shape(global.ptDust,pt_shape_flare);
 part_type_size(global.ptDust,0.10,0.30,0,0.10);

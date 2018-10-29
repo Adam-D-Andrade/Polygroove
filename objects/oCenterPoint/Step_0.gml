@@ -3,7 +3,7 @@
 
 
 if (scale != 1) scale = lerp(scale, 1, 0.1);
-if (line_width != 1) line_width = lerp(line_width, 1, 0.1);
+if (line_width != orig_line_width) line_width = lerp(line_width, orig_line_width, 0.1);
 
 
 part_particles_create(global.particleSystem, x, y, global.ptYellowLines,1);

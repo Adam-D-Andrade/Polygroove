@@ -39,6 +39,30 @@
             }
         },
         {
+            "Key": "02960910-8b4b-417e-b52f-ec727facb7fb",
+            "Value": {
+                "id": "3a2efce1-1e56-4c08-ad6f-7fe776b97cfa",
+                "resourcePath": "sprites\\sprLightSpot\\sprLightSpot.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "02b9490f-bc57-4c98-9b71-dbe8dc857143",
+            "Value": {
+                "id": "51d55d92-59ac-4aa3-aadf-01dcf9908ba8",
+                "resourcePath": "sprites\\sprLightRay\\sprLightRay.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "03c3254b-4bc2-4b9d-859a-944c74d5a065",
+            "Value": {
+                "id": "794637c8-7eef-4489-b82b-b8f70c419885",
+                "resourcePath": "views\\03c3254b-4bc2-4b9d-859a-944c74d5a065.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
             "Key": "03e24c98-8dca-4e0b-ba36-ce6a2ac19fc3",
             "Value": {
                 "id": "0733d69c-f1fa-4266-b990-249c38015f54",
@@ -268,6 +292,14 @@
                 "id": "680e7057-01e8-471f-b860-a0460e564261",
                 "resourcePath": "objects\\oBackgroundPolygon_3\\oBackgroundPolygon_3.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "4a3d1f44-1264-411e-b885-6f72fac270e8",
+            "Value": {
+                "id": "adcada5a-033f-40e6-bc78-778a4719b40a",
+                "resourcePath": "sprites\\sprLightLaser\\sprLightLaser.yy",
+                "resourceType": "GMSprite"
             }
         },
         {

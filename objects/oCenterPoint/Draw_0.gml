@@ -1,10 +1,14 @@
 /// @description
 
-var centre_x = room_width/2;
-var centre_y = room_height/2;
 
 
-draw_line_width(centre_x, 0, centre_x, y,line_width);
+
+
+gpu_set_blendmode(bm_add);
+draw_sprite_ext(sprLightLaser, 0, center_x, -32, line_scale, line_width, 270, c_white, 1);
+gpu_set_blendmode(bm_normal);
+
+
 
 
 if( global.custom_debug_mode){

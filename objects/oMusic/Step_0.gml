@@ -23,8 +23,9 @@ if (global.target_value >= -0.04) and (global.target_value <= 0.04){
 		
 		with(oCenterPoint) {
 			scale = 3; 
-			line_width = 40;
+			line_width = 4;
 			part_particles_create(global.particleSystem, x, y, global.ptYellowLines,20);
+			part_particles_create(global.particleSystem, x, y, global.ptCircleWave, 25)
 			//we should create some particle effect here on the beat
 			//Forest: placer the part_particles_create code here
 		}
