@@ -20,23 +20,27 @@ if (global.target_value >= -0.04) and (global.target_value <= 0.04){
 		total_beats++;
 		
 		yy = total_beats - start_beat;
-		
-		with(oCenterPoint) {
-			scale = 3; 
-			line_width = 4;
-			part_particles_create(global.particleSystem, x, y, global.ptYellowLines,20);
-			part_particles_create(global.particleSystem, x, y, global.ptCircleWave, 25)
-			//we should create some particle effect here on the beat
-			//Forest: placer the part_particles_create code here
-		}
-		
-		
+				
 		//Within the beats requiring palyer input
 		if (total_beats >= start_beat) && (total_beats <= end_beat){
 			global.songPlaying = true;
-			instance_create_layer(x, y, "Instances", oInputSignal);
+			
+			instance_create_layer(global.center_x, y, "Instances", oInputSignal);
+			
+			with(oCenterPoint) {
+				scale = 3; 
+				line_width = 4;
+				part_particles_create(global.particleSystem, x, y, global.ptYellowLines,20);
+				part_particles_create(global.particleSystem, x, y, global.ptCircleWave, 25)
+				//we should create some particle effect here on the beat
+				//Forest: placer the part_particles_create code here
+			}
+			
 			
 			if ds_exists(LevelGrid, ds_type_grid){
+				
+				level_grid_width = ds_grid_width(LevelGrid);
+				level_grid_height = ds_grid_height(LevelGrid);
 				
 				//Check to make sure that total beats isn't higher than the grid height
 				if (yy < level_grid_height){
@@ -47,20 +51,20 @@ if (global.target_value >= -0.04) and (global.target_value <= 0.04){
 						switch LevelGrid[# xx, yy]{
 							case string(enemy.basic):
 								//On create, give initial effects
-								with instance_create_layer(oController.x_grid[xx],-32, "Instances", oParEnemy) {
+								with instance_create_layer(oController.x_grid[xx],0, "Instances", oParEnemy) {
 									rotation = 359;
 									scale = 2;
-									target_y = y + 64;			
+									target_y = 0;			
 								}
 							break;
 							case "2":
-								with instance_create_layer(oController.x_grid[xx],-32, "Instances", oWanderRandom) {							
+								with instance_create_layer(oController.x_grid[xx],0, "Instances", oWanderRandom) {							
 									scale = 2;
 									target_y = y + 64;								
 								}
 							break;
 							case "3":
-								with instance_create_layer(oController.x_grid[xx],-32, "Instances", oEnemyFollower) {	
+								with instance_create_layer(oController.x_grid[xx],0, "Instances", oEnemyFollower) {	
 									rotation = 359;
 									scale = 2;
 									target_y = y + 64;
@@ -85,7 +89,7 @@ if (global.target_value >= -0.04) and (global.target_value <= 0.04){
 					x = oController.x_grid[irandom_range(0,11)];
 					rotation = 359;
 					scale = 2;
-					target_y = y + 64;
+					target_y =0;
 				}
 			}
 			

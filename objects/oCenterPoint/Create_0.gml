@@ -1,7 +1,7 @@
 /// @description
 
-center_x = room_width/2;
-center_y = room_height/2;
+center_x = camera_get_view_width(view_camera[0])/2;
+center_y = camera_get_view_height(view_camera[0])/2;
 
 scale = 1;
 

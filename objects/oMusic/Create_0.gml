@@ -15,8 +15,7 @@ yy = 0;
 
 level_name = "Level_" + string(global.level_counter) + ".csv";
 LevelGrid = load_csv(level_name);
-level_grid_width = ds_grid_width(LevelGrid);
-level_grid_height = ds_grid_height(LevelGrid);
+
 
 global.beatsPerMinute = beats_per_min;
 global.beatsPerSecond = 60/beats_per_min;

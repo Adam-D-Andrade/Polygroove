@@ -7,6 +7,7 @@ switch (mpos)
 		audio_stop_all();
 		audio_play_sound(sMenuSelect,1,false);
 		room_goto(rmFirst);
+		
 		break;
 	}
 	// Options

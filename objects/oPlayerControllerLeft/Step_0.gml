@@ -52,7 +52,7 @@ if (!moving && global.songPlaying){
 if (xgrid_pos < 0) xgrid_pos = 0;
 if (xgrid_pos > 5) xgrid_pos = 5;
 
-if ((target_y + y_limit > room_height) || (target_y - y_limit < 0)){
+if ((target_y >= bottom_ymax) || (target_y - y_limit < 0)){
 	target_y = y;
 }
 

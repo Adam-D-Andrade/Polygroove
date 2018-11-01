@@ -1,5 +1,5 @@
 /// @description
-
+event_inherited();
 moving = false;
 flag = false;
 

@@ -5,9 +5,17 @@
 global.seconds_passed = delta_time/1000000;
 
 if keyboard_check_pressed(ord("M")){
-	audio_set_master_gain(0,0);
-	show_question("Mute?");
+
+		audio_set_master_gain(0,0);
+	
 }
+
+if keyboard_check_pressed(vk_escape){
+	if (show_question("Exit?")){
+		game_end();
+	}
+}
+
 
 if keyboard_check_pressed(vk_space) && (global.level_counter == 0){
 	if !instance_exists(oMusic){

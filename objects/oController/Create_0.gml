@@ -64,30 +64,31 @@ global.accuracy_counter[r.good] = 0;
 global.accuracy_counter[r.great] = 0;
 global.accuracy_counter[r.perfect] = 0;
 
-var rm_height = room_height;
-var rm_width = room_width;
 
-//var grid_length = rm_width div GRID_SIZE;
-//var grid_height = rm_height div GRID_SIZE;
+global.center_x = camera_get_view_width(view_camera[0])/2;
+global.center_y = camera_get_view_height(view_camera[0])/2;
 
-//Not sure if we need a full on grid data structure as everything can't be snapped to this due to delta time
-//level_grid = ds_grid_create()
-
-var centre_x = rm_width/2;
-var centre_y = rm_height/2;
-
+//Will use the center point beat object for spacing, currently I am thinking about 75% down the size of the view
+var yoffset = camera_get_view_height(view_camera[0]) * 0.75;
 
 global.PlayerLives = 5;
 
+if !instance_exists(oCenterPoint) {
+	instance_create_layer(global.center_x, yoffset, "Instances", oCenterPoint); 
+}
+
+if !instance_exists(oCamera) {
+	instance_create_layer(global.center_x, global.center_y, "Instances", oCamera); 
+}
+
+
 if !instance_exists(oPlayerControllerLeft) {
-	instance_create_layer(x_grid[3], centre_y, "Instances", oPlayerControllerLeft)
+	instance_create_layer(x_grid[3], global.center_y, "Instances", oPlayerControllerLeft)
 }
 if !instance_exists(oPlayerControllerRight) {
-	instance_create_layer(x_grid[8], centre_y, "Instances", oPlayerControllerRight)
+	instance_create_layer(x_grid[8], global.center_y, "Instances", oPlayerControllerRight)
 }
-if !instance_exists(oCenterPoint) {
-	instance_create_layer(centre_x, centre_y + 200, "Instances", oCenterPoint); 
-}
+
 
 
 

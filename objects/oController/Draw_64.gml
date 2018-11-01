@@ -1,7 +1,7 @@
 // Draw user stats if we're in next_level limbo
 if next_level{
-	var center_width = room_width / 2;
-	var center_height = room_height / 2;
+	var center_width = display_get_gui_width() / 2;
+	var center_height = display_get_gui_height() / 2;
 	
 	// Calculate grade
 	level_grade = calculate_level_grade(last_max_beats_on_track,
@@ -15,7 +15,6 @@ if next_level{
 	draw_text(center_width-300,center_height - 90, "Grade: " + level_grade[0]);
 	draw_text(center_width-300,center_height - 140, "Points: " + string(level_grade[1]));
 	
-	
 	draw_set_font(fntScores);
 	draw_text(center_width-300,center_height + 0 ,"Perfect: "+ string(global.accuracy_counter[r.perfect]));
 	draw_text(center_width-300,center_height + 30 ,"Great: "+ string(global.accuracy_counter[r.great]));
@@ -25,8 +24,8 @@ if next_level{
 
 if fail_screen {
 	
-	var center_width = room_width/2;
-	var center_height = room_height/2;
+	var center_width = display_get_gui_width() / 2;
+	var center_height = display_get_gui_height() / 2;
 	
 	draw_set_halign(fa_center);
 	draw_set_font(fntXolonium);
@@ -46,3 +45,5 @@ if fail_screen {
 	draw_set_halign(fa_left);
 								
 }
+
+draw_text(2, 225, "global Center Width: " + string(global.center_x));

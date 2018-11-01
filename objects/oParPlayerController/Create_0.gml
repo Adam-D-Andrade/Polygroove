@@ -1,17 +1,4 @@
 /// @description
 
-//enum player_key {
-//	rc_left,
-//	rc_right,
-//	rc_up,
-//	rc_down,
-//	lc_left,
-//	lc_right,
-//	lc_up,
-//	lc_down,
-//	action
-//}
-
-//moving = false;
-
+bottom_ymax = camera_get_view_height(view_camera[0]) * 0.75;
 

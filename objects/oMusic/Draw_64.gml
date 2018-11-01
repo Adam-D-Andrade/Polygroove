@@ -1,9 +1,16 @@
 // Draw progress bar at bottom of screen
 
-top_left_x = room_width / 4;
-top_left_y = room_height - 44;
-bottom_right_x = room_width - (room_width / 4);
-bottom_right_y = room_height - 22;
+var gui_width = display_get_gui_width();
+var gui_height = display_get_gui_height();
+var bar_height = 20;
+var yoffset = 0.10 * display_get_gui_height();
+
+top_left_x = gui_width / 4;
+top_left_y = gui_height - yoffset;
+
+
+bottom_right_x = gui_width - (gui_width / 4);
+bottom_right_y = top_left_y + bar_height;
 
 // Outline for rectangle
 draw_rectangle(top_left_x, top_left_y, bottom_right_x, bottom_right_y, true);

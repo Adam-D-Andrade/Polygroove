@@ -50,7 +50,8 @@ if (!moving && global.songPlaying){
 if (xgrid_pos < 6) xgrid_pos = 6;
 if (xgrid_pos > 11) xgrid_pos = 11;
 
-if ((target_y + y_limit > room_height) || (target_y - y_limit < 0)){
+
+if ((target_y >= bottom_ymax) || (target_y - y_limit < 0)){
 	target_y = y;
 }
 

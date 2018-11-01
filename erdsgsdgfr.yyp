@@ -66,7 +66,7 @@
             "Key": "03e24c98-8dca-4e0b-ba36-ce6a2ac19fc3",
             "Value": {
                 "id": "0733d69c-f1fa-4266-b990-249c38015f54",
-                "resourcePath": "datafiles_yy\\Level_1.csv.yy",
+                "resourcePath": "datafiles_yy\\Level_12.csv.yy",
                 "resourceType": "GMIncludedFile"
             }
         },
@@ -76,6 +76,14 @@
                 "id": "ab3e90fd-83ad-41c9-9ec4-aa761591f6b2",
                 "resourcePath": "sprites\\sprEnemyMask\\sprEnemyMask.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "08910f89-91f1-4d33-a657-dfb1867b387f",
+            "Value": {
+                "id": "0c265325-9529-4254-bdfe-61c3cdc3c54c",
+                "resourcePath": "scripts\\screen_shake\\screen_shake.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -180,6 +188,14 @@
                 "id": "acb0addc-da71-4fda-a5d1-17ef7e982d07",
                 "resourcePath": "sounds\\sMenuSelect\\sMenuSelect.yy",
                 "resourceType": "GMSound"
+            }
+        },
+        {
+            "Key": "2b2c6922-8d26-4978-ab5c-420da453f28b",
+            "Value": {
+                "id": "37d00d31-fac5-4880-a099-fc9e4489c84a",
+                "resourcePath": "rooms\\rmSetUp\\rmSetUp.yy",
+                "resourceType": "GMRoom"
             }
         },
         {
@@ -391,14 +407,6 @@
             }
         },
         {
-            "Key": "5cd7db23-23c5-44d9-a3e6-2b1f65ec2a15",
-            "Value": {
-                "id": "1caf1827-c8d8-49b5-bdbd-c9bca219d631",
-                "resourcePath": "objects\\oCamera\\oCamera.yy",
-                "resourceType": "GMObject"
-            }
-        },
-        {
             "Key": "5fdeecbd-c9c2-42aa-b082-41a901b7b58d",
             "Value": {
                 "id": "aa6995dd-3458-4aa2-aa26-ad12ebd84dcc",
@@ -599,6 +607,14 @@
             }
         },
         {
+            "Key": "8d444ec1-a0fc-49dd-b0e0-3241512abc8e",
+            "Value": {
+                "id": "327e3235-c4dc-464c-8b55-c2e180be4ad8",
+                "resourcePath": "objects\\oDisplayManager\\oDisplayManager.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "8d98999a-e80a-4f1d-b094-57b73ea51b9b",
             "Value": {
                 "id": "e4a8af95-f9c8-4696-8ad2-8324fc8abf6c",
@@ -652,6 +668,14 @@
                 "id": "167512bd-c9ad-4fc8-b925-a3ea54bf5591",
                 "resourcePath": "scripts\\draw_polygon\\draw_polygon.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "9b68a0d6-00f9-4af8-894c-6c030b6c8108",
+            "Value": {
+                "id": "bef95094-f39c-4dfa-95b7-5668d3f4df08",
+                "resourcePath": "objects\\oCamera\\oCamera.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -946,7 +970,7 @@
             "Key": "e4408ccd-c9ae-445b-8437-8595833aa14f",
             "Value": {
                 "id": "2b5775a0-4295-4fd4-b537-8300aec9046d",
-                "resourcePath": "datafiles_yy\\Level_2.csv.yy",
+                "resourcePath": "datafiles_yy\\Level_1.csv.yy",
                 "resourceType": "GMIncludedFile"
             }
         },
@@ -1056,7 +1080,8 @@
         "a96f4a2b-d944-4394-8249-379ee57655e4",
         "e5d34fc8-4d85-4177-90d5-b6bbc6066ca5",
         "b8bff2f8-7865-4d5b-af9b-10f646cdee86",
-        "f42c7117-7d81-4333-beb4-7e2320e52a7a"
+        "f42c7117-7d81-4333-beb4-7e2320e52a7a",
+        "08910f89-91f1-4d33-a657-dfb1867b387f"
     ],
     "tutorial": ""
 }

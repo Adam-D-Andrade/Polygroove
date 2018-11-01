@@ -19,3 +19,5 @@ if (move) {
 }
 
 y = lerp(y, target_y, 0.1);
+
+if (y > camera_get_view_height(view_camera[0])) {instance_destroy();}

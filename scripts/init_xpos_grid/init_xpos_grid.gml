@@ -1,4 +1,4 @@
-var half_w = (room_width/2);
+var half_w = camera_get_view_width(view_camera[0])/2;
 
 var left_offset = 100;//player start x
 var right_offset = 100;
