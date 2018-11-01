@@ -4,10 +4,10 @@ if ((x == oController.x_grid[xgrid_pos]) && (y == target_y)){
 	moving = false;
 }
 
-move_dir[0] = keyboard_check_pressed(ord("J")) || keyboard_check_pressed(vk_left);
-move_dir[1] = keyboard_check_pressed(ord("L")) || keyboard_check_pressed(vk_right);
-move_dir[2] = keyboard_check_pressed(ord("I")) || keyboard_check_pressed(vk_up);
-move_dir[3] = keyboard_check_pressed(ord("K")) || keyboard_check_pressed(vk_down);
+move_dir[0] = keyboard_check_pressed(ord("J")) || keyboard_check_pressed(vk_left) || keyboard_check_pressed(ord("4"));
+move_dir[1] = keyboard_check_pressed(ord("L")) || keyboard_check_pressed(vk_right) || keyboard_check_pressed(ord("6"));
+move_dir[2] = keyboard_check_pressed(ord("I")) || keyboard_check_pressed(vk_up) || keyboard_check_pressed(ord("8"));
+move_dir[3] = keyboard_check_pressed(ord("K")) || keyboard_check_pressed(vk_down) || keyboard_check_pressed(ord("5"));
 
 if (!moving && global.songPlaying){
 	// Loop through the player input
@@ -15,7 +15,7 @@ if (!moving && global.songPlaying){
 		if (move_dir[i]){
 			moving = true;
 			
-			// Loop through the ratings, startying with most narrow (perfect)
+			// Loop through the ratings, starting with most narrow (perfect)
 			// and add to the counter and check the rating
 			var rating_on_input = 0;
 			for (var rating = r.perfect; rating >= 0; rating--){
@@ -47,8 +47,17 @@ if (!moving && global.songPlaying){
 }
 
 
-if (xgrid_pos < 6) xgrid_pos = 6;
-if (xgrid_pos > 11) xgrid_pos = 11;
+xoffset = 0.05 * display_get_gui_width();
+lives_x_pos =  display_get_gui_width() - xoffset - (25 * current_lives);
+lives_y_pos = display_get_gui_height() - 0.10 * display_get_gui_height();
+
+
+var x_max = array_length_1d(oController.x_grid) - 1;
+var x_min = array_length_1d(oController.x_grid)/2;
+
+
+if (xgrid_pos < x_min) xgrid_pos = x_min;
+if (xgrid_pos > x_max) xgrid_pos = x_max;
 
 
 if ((target_y >= bottom_ymax) || (target_y - y_limit < 0)){

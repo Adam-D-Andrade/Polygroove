@@ -10,7 +10,7 @@ if (shoot) {
 	if instance_exists(oParPlayerController){
 		var player_instance = oParPlayerController;
 		with(collision_line(x-(line_width/2), y, x+(line_width/2), room_height, player_instance, false, true)){
-			lose_life(id);
+			lose_life(id, lives_x_pos, lives_y_pos);
 		}
 	}
 }

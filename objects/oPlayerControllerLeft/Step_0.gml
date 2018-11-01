@@ -48,9 +48,13 @@ if (!moving && global.songPlaying){
 	}
 }
 	
+lives_x_pos = display_get_gui_width() * 0.05 + (25 * current_lives);
+lives_y_pos = display_get_gui_height() - 0.10 * display_get_gui_height();
+
+var x_max = (array_length_1d(oController.x_grid)/2) - 1;
 
 if (xgrid_pos < 0) xgrid_pos = 0;
-if (xgrid_pos > 5) xgrid_pos = 5;
+if (xgrid_pos > x_max) xgrid_pos = x_max;
 
 if ((target_y >= bottom_ymax) || (target_y - y_limit < 0)){
 	target_y = y;
